@@ -19,3 +19,12 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ruby Mine
+.idea
+
+# Vagrant
+.vagrant
+
+# Cloud 9
+.c9
