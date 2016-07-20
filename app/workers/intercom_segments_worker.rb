@@ -14,7 +14,12 @@ class IntercomSegmentsWorker
       end
       users_response = self.client.get("/users", segment_id: s.id)
       users_response['users'].each do |user_hash|
-        
+        user = segment.users.find_by(intercom_id: user_hash['id'])
+        if user.nil?
+          user = User.intercom_response(user_hash)
+          user.save
+          SegmentUser.create(user: user, segment: segment)
+        end
       end
     end
   end
