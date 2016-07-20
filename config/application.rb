@@ -26,5 +26,11 @@ module ChurnburnerApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    Figleaf::Settings.configure_with_auto_define do |s|
+      s.env = Rails.env
+      s.some_awesome_flag = true
+      s.load_settings
+    end
   end
 end

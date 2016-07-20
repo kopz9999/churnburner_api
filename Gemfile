@@ -20,13 +20,23 @@ gem 'puma', '~> 3.0'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+# App
+gem 'intercom', "~> 3.5.1"
+gem 'sidekiq'
+gem 'figleaf'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-byebug'
+  gem 'dotenv-rails'
 end
 
 group :test do
   gem 'rspec-rails'
+  gem 'vcr', '3.0.3'
+  gem 'webmock'
+  gem 'database_cleaner'
 end
 
 group :development do
