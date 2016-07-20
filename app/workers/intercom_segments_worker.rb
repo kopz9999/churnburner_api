@@ -7,31 +7,27 @@ class IntercomSegmentsWorker
 
   def save_segments
     self.client.segments.all.each do |s|
-      segment = Segment.find_by(intercom_id: s.id)
-      if segment.nil?
-        segment = Segment.intercom s
-        segment.save
-      end
+      segment = Segment.retrieve_intercom s
       users_response = self.client.get("/users", segment_id: s.id)
       users_response['users'].each do |user_hash|
-        user = segment.users.find_by(intercom_id: user_hash['id'])
-        if user.nil?
-          user = User.intercom_response(user_hash)
-          user.save
-          SegmentUser.create(user: user, segment: segment)
-        end
+        user = User.retrieve_intercom_response user_hash
+        segment.add_user user
       end
+      self.segments << segment
     end
   end
 
   def sync_segments
     self.client.segments.all.each do |s|
-      segment = Segment.find_by(intercom_id: s.id)
-      if segment.nil?
-        segment = Segment.intercom s
-        segment.save
+      segment = Segment.retrieve_intercom s
+      users_response = self.client.get("/users", segment_id: s.id)
+      users_response['users'].each do |user_hash|
+        segment.add_current_user User.retrieve_intercom_response(user_hash)
       end
+      self.segments << segment
     end
+    self.segments.each(&:sync_users)
+    
   end
 
   protected

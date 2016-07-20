@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160719231723) do
+ActiveRecord::Schema.define(version: 20160720182501) do
 
   create_table "segment_users", force: :cascade do |t|
     t.integer  "segment_id"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160719231723) do
     t.string   "intercom_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "name"
   end
 
 end
