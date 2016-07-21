@@ -20,4 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  slack:
+    added_user: "User %{user_name} (%{user_email}) was added to segment %{segment_name}"
+    removed_user: "User %{user_name} (%{user_email}) was removed from segment %{segment_name}"

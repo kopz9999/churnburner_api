@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: as_user=false&channel=%23churnburner-box&text=User+User+1+%28user_1%40gmail.com%29+was+removed+from+segment+Segment+1&token=xoxp-2151638196-14929696673-61712427767-1387b551fd
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Slack Ruby Client/0.7.5
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Content-Security-Policy:
+      - referrer no-referrer;
+      Date:
+      - Thu, 21 Jul 2016 00:07:16 GMT
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      X-Content-Type-Options:
+      - nosniff
+      X-Oauth-Scopes:
+      - identify,read,post,client,apps
+      X-Slack-Backend:
+      - z
+      X-Slack-Req-Id:
+      - 098e6875-39b4-4a78-8113-5106142721e4
+      X-Xss-Protection:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 81871f1c889cc44b6c25e3ef722a3801.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 6_lUfCLvP_2wO11kwvXIX0qTZmgClEhf5MkCd1TGux0IXuOR0CM_6g==
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        eyJvayI6dHJ1ZSwiY2hhbm5lbCI6IkMxVExKTTE4QSIsInRzIjoiMTQ2OTA1
+        OTYzNi4wMDAwMDciLCJtZXNzYWdlIjp7InRleHQiOiJVc2VyIFVzZXIgMSAo
+        PG1haWx0bzp1c2VyXzFAZ21haWwuY29tfHVzZXJfMUBnbWFpbC5jb20+KSB3
+        YXMgcmVtb3ZlZCBmcm9tIHNlZ21lbnQgU2VnbWVudCAxIiwidXNlcm5hbWUi
+        OiJTbGFjayBBUEkgVGVzdGVyIiwiYm90X2lkIjoiQjFUTTQ4SzMzIiwidHlw
+        ZSI6Im1lc3NhZ2UiLCJzdWJ0eXBlIjoiYm90X21lc3NhZ2UiLCJ0cyI6IjE0
+        NjkwNTk2MzYuMDAwMDA3In19
+    http_version: 
+  recorded_at: Thu, 21 Jul 2016 00:07:15 GMT
+recorded_with: VCR 3.0.3

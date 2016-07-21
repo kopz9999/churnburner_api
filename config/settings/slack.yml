@@ -1,0 +1,11 @@
+default: &default
+  segments_channel: 'churnburner-box'
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default

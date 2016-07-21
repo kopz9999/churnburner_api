@@ -24,6 +24,7 @@ gem 'puma', '~> 3.0'
 gem 'intercom', "~> 3.5.1"
 gem 'sidekiq'
 gem 'figleaf'
+gem 'slack-ruby-client'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -37,6 +38,7 @@ group :test do
   gem 'vcr', '3.0.3'
   gem 'webmock'
   gem 'database_cleaner'
+  gem "factory_girl_rails"
 end
 
 group :development do
