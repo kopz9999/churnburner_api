@@ -47,7 +47,7 @@ class Segment < ApplicationRecord
     self.users.reload
     self.users.each do |user|
       u = self.current_users.delete user.id
-      self.removed_users << u if u.nil?
+      self.removed_users << user if u.nil?
     end
     self.current_users.each do |_k, v|
       self.new_users << v
