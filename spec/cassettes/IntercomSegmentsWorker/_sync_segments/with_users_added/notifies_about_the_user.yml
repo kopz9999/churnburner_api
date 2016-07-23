@@ -1,0 +1,299 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.intercom.io/segments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 23 Jul 2016 07:48:47 GMT
+      Etag:
+      - W/"7bae0ae6b79c664e58c3ce70331e6bf9"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - c037951adf5129f20c1673a4d5c3ebcc64c509a0
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1469260140'
+      X-Request-Id:
+      - am2qt5thpfiag746hc5g
+      X-Runtime:
+      - '0.044492'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAF8hk1cAA8SOQQqDMBBFr1JmHUrUxCTuvEA3XZYiqRkkoDaYWBHx7k2h
+        xdJdodDZvfl/mLdAmB1CAR6bDvuwb60PQF7ooTgtH5WYWhORC2moFEpdcq7q
+        xEhG46RZzHvdPQ7KOtgbRq4H1AFNpQMUCculzCnPBIHRmfe9SrlgkhJwOPhr
+        Xz3/jh4HWMmXHunmccDpTxJskzi21jnbN7ty0vOPdM7rHQAA//8DAFOXc1fA
+        AQAA
+    http_version: 
+  recorded_at: Sat, 23 Jul 2016 07:48:46 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/users?segment_id=578d08799b659c1d84000023
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 23 Jul 2016 07:48:48 GMT
+      Etag:
+      - W/"edd324baef6ca3e6086bd704744255fc"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - c037951adf5129f20c1673a4d5c3ebcc64c509a0
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '499'
+      X-Ratelimit-Reset:
+      - '1469260140'
+      X-Request-Id:
+      - am2qt614q80f9hk5vohg
+      X-Runtime:
+      - '0.105031'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAGAhk1cAA3RUyW7bMBD9FYKnBrBl0drdSw0f2iJLD3bqgxEItETZbChS
+        FakmTuB/71CLlwY1BJicefNm5zs2h4rhGW40qx3BtcEjXNEd03j2Pui6+whL
+        9mrwTDZCdBg8I3BgddpdAneEjTJUpD0BOY5aXjhu3i8dARfP4RxEMQuLuAgL
+        MiUu8TLfhV+Q484utaDOHZVKHkrVAFVBhWYjzErKBXAIqvdU5jX9cqB7pZxM
+        lTZUWlpnd4PSZqVZk1uWE+cfamh9kWcvgOBKSCBtatFBIQ1aVW00+Fej98lr
+        VQEKPFVU8qtSdbLDUMkLyOYJaITKqOFKpjl4ujC7loMdN4e0z2FJpaFoIWib
+        Raak4ZJJk2Yqt+qHeSttpKlPJo+SG5ajpaGmbZwActNYuBc5XuASG4nc9bIx
+        FN9J4sCHGilt+9dTJ4EbEDCv2c7G1pMvqOCFqiW34RhesjclrXxesppndHKn
+        dDqXOyZa10NkPeXjco5tHag2ac1+Nwz+KQwV8cNkCpF5Sa/UjMmUV2AShQ5x
+        p44fO1PPRpPVDNLKB7M4CaZ+6NkoS2VY+kEdkSQOR1jznQRxU33QNFV+aXGK
+        QzOtbd5tClYFIpVxO9+1Kri4avy1Zuj/B/zmPwbnkV29cGPOK0LikHiRlyT9
+        TvSobVEUeYtqpxTvjan0bDIxnbXdgsmAOdrJa6Rutjqr+RYyLWpVpu0Cnfep
+        XTgYe5isbjjxvXrjQtBJ4Ljo05rLXL1o9LBCxHXcz2j9Yx36N2heVYKt2faW
+        m0lgpytEn26/re7vRkjwZ4a+suxZ3aDFHlyySUAc15lGrg8tDdGSFrTmvZkd
+        Jrq7LClchzp2ms2laiiQH8cJCc/1Wyx/ou9lpWqDxmjqknDsRmOSIBLP4PMI
+        elwtupJotish3asudqJT+06Izb+Qiycsd+MoSbZhkGQkj9snbOp1LrJGGyg1
+        NQYK35h2Yo7Hp+GdHCbr+BcAAP//AwC++oZkhwUAAA==
+    http_version: 
+  recorded_at: Sat, 23 Jul 2016 07:48:47 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/users?segment_id=578d08799b659c1d84000022
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 23 Jul 2016 07:48:49 GMT
+      Etag:
+      - W/"d38dc1b9b9bbe2d05b1a1dce6a65a48f"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - c037951adf5129f20c1673a4d5c3ebcc64c509a0
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '498'
+      X-Ratelimit-Reset:
+      - '1469260140'
+      X-Request-Id:
+      - am2qt656isofeujjsj1g
+      X-Runtime:
+      - '0.123373'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAGEhk1cAAzSMywqAIBBF/+WuJWzRxl+JEIkhgkFFRyikf+9h7s7hXG6F
+        nJFgUDKlgfcsUIhuowxTe2uu4OkQGF+Y2wZmfICSbTJpBQni2P4H+lLf74Pz
+        0tsaipe33QAAAP//AwCvAxzqewAAAA==
+    http_version: 
+  recorded_at: Sat, 23 Jul 2016 07:48:47 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/users?segment_id=578d08799b659c1d84000024
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 23 Jul 2016 07:48:49 GMT
+      Etag:
+      - W/"d38dc1b9b9bbe2d05b1a1dce6a65a48f"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - c037951adf5129f20c1673a4d5c3ebcc64c509a0
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '497'
+      X-Ratelimit-Reset:
+      - '1469260140'
+      X-Request-Id:
+      - am2qt6a3slubkva9sn5g
+      X-Runtime:
+      - '0.088916'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAGEhk1cAAzSMywqAIBBF/+WuJWzRxl+JEIkhgkFFRyikf+9h7s7hXG6F
+        nJFgUDKlgfcsUIhuowxTe2uu4OkQGF+Y2wZmfICSbTJpBQni2P4H+lLf74Pz
+        0tsaipe33QAAAP//AwCvAxzqewAAAA==
+    http_version: 
+  recorded_at: Sat, 23 Jul 2016 07:48:48 GMT
+recorded_with: VCR 3.0.3

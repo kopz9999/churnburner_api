@@ -3,7 +3,7 @@ class Segment < ApplicationRecord
     def retrieve_intercom(intercom_segment)
       segment = self.find_by(intercom_id: intercom_segment.id)
       if segment.nil?
-        segment = self.intercom s
+        segment = self.intercom intercom_segment
         segment.save
       end
       segment
@@ -20,7 +20,7 @@ class Segment < ApplicationRecord
   has_many :users, through: :segment_users
 
   def add_user(user)
-    u = self.users.find(user.id)
+    u = self.users.find_by(id: user.id)
     if u.nil?
       SegmentUser.create(segment: self, user: user)
     end

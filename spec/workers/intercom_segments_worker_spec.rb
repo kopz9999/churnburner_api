@@ -25,22 +25,60 @@ RSpec.describe IntercomSegmentsWorker, :vcr do
   end
 
   describe '#sync_segments' do
+    let(:user_a) { create :user, :default, suffix: 'a' }
+    let(:user_b) { create :user, :default, suffix: 'b' }
+    let(:user_intercom) do
+      create :user, :intercom, suffix: 'intercom',
+             intercom_id: '578e6f8f6f121013c400005d'
+    end
+    let(:segment) { create :segment, :intercom, suffix: 'intercom',
+                           intercom_id: '578d08799b659c1d84000023' }
+
     subject do
       instance.sync_segments
     end
+
+    before do
+      segment
+    end
+
     context 'with users added' do
+      before do
+        user_intercom
+        SegmentUser.create segment: segment, user: user_a
+      end
+
       it 'notifies about the user' do
         subject
+        s = instance.segments.first
+        expect(s.new_users.length).to eq 1
+        expect(s.new_users).to include(user_intercom)
       end
     end
     context 'with users out' do
-      it 'notifies about the user' do
+      before do
+        SegmentUser.create segment: segment, user: user_b
+      end
 
+      it 'notifies about the user' do
+        subject
+        s = instance.segments.first
+        expect(s.removed_users.length).to eq 1
+        expect(s.removed_users).to include(user_b)
       end
     end
     context 'without changes' do
-      it 'notifies about the user' do
+      before do
+        user_intercom
+        SegmentUser.create segment: segment, user: user_intercom
+      end
 
+      it 'notifies about the user' do
+        subject
+        s = instance.segments.first
+        expect(s.new_users.length).to eq 0
+        expect(s.removed_users.length).to eq 0
+        expect(s.users.to_a).to include(user_intercom)
       end
     end
   end

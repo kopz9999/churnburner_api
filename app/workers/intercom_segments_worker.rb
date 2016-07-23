@@ -3,6 +3,7 @@ class IntercomSegmentsWorker
 
   def perform(name, count)
     self.sync_segments
+    self.notify_segment_users
   end
 
   def save_segments
