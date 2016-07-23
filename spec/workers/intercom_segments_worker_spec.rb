@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe IntercomSegmentsWorker, :vcr do
-  let(:instance) { IntercomSegmentsWorker.new }
+  let(:instance) { IntercomSegmentsWorker.send(:new) }
   let(:segment_names) { ['Active', 'New', 'Slipping Away'] }
 
   describe '#save_segments' do
@@ -87,7 +87,7 @@ RSpec.describe IntercomSegmentsWorker, :vcr do
     let(:segment) { create :segment, :default }
     let(:user) { create :user, :default }
     let(:instance) do
-      iw = IntercomSegmentsWorker.new
+      iw = IntercomSegmentsWorker.send(:new)
       iw.segments << segment
       iw
     end

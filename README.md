@@ -1,24 +1,9 @@
-# README
+# Churnburner API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application has the purpose of listening to customer activity through
+Intercom API.
 
-Things you may want to cover:
+# TODO
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The current solution consists in a Daemon but it should be upgraded to a job
+queue. Each segment should be run in a delayed job.

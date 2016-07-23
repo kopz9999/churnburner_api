@@ -1,7 +1,8 @@
 class IntercomSegmentsWorker
-  include Sidekiq::Worker
+  include Singleton
 
-  def perform(name, count)
+  # TODO: Separate into delayed jobs
+  def perform
     self.sync_segments
     self.notify_segment_users
   end
