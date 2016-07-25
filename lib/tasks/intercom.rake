@@ -6,7 +6,7 @@ namespace :intercom do
     Rails.logger.info 'Segments Saved !!'
   end
 
-  desc "Initial load of users and segments"
+  desc "Sync segments and send notifications"
   task :process_segments => :environment do |t, args|
     Rails.logger.info "Starting daemon..."
     loop do
@@ -18,6 +18,7 @@ namespace :intercom do
         Rails.logger.error e.backtrace
       end
       Rails.logger.info 'Segments Synced !!'
+      sleep 30
     end
   end
 end
