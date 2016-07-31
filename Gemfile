@@ -23,18 +23,23 @@ gem 'intercom', "~> 3.5.1"
 gem 'sidekiq'
 gem 'figleaf'
 gem 'slack-ruby-client'
+# Use PostgresSQL as the database for Active Record
+gem 'pg'
+# gem 'faraday', '0.8.11'
+gem 'her',
+    git: 'https://github.com/kopz9999/her.git',
+    branch: 'feature/activemodel-5.0.x'
+gem 'fub_client', '0.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails'
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
   gem 'dotenv-rails'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'vcr', '3.0.3'
   gem 'webmock'
   gem 'database_cleaner'
@@ -49,7 +54,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
   gem 'thin'
 end
 

@@ -21,4 +21,19 @@ namespace :intercom do
       sleep 30
     end
   end
+
+  desc "Update jobs from Intercom"
+  task :jobs_sync => :environment do |t, args|
+    Rails.logger.info "Starting jobs daemon..."
+    loop do
+      Rails.logger.info 'Syncing jobs ...'
+      begin
+        ChurnburnerApi::IntercomJobsManager.instance.process
+      rescue => e
+        Rails.logger.error e.backtrace
+      end
+      Rails.logger.info 'Jobs Synced !!'
+      sleep 30
+    end
+  end
 end

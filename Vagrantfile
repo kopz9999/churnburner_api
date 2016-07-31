@@ -6,6 +6,7 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure(2) do |config|
+  fub_client_path = '../fub_client'
   config.vm.box = "ubuntu/trusty64"
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.provision :shell, path: "install-rvm.sh", args: "stable", privileged: false
@@ -17,4 +18,8 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.network :forwarded_port, guest: 5001, host: 5001
+
+  if File.exist?(fub_client_path)
+    config.vm.synced_folder fub_client_path, '/fub_client'
+  end
 end

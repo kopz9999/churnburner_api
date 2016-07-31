@@ -10,7 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160720182501) do
+ActiveRecord::Schema.define(version: 20160729091837) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "app_tasks", force: :cascade do |t|
+    t.integer  "status_identity"
+    t.datetime "ran_at"
+    t.string   "name"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "intercom_job_sync_events", force: :cascade do |t|
+    t.integer  "intercom_job_id"
+    t.integer  "sync_event_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "intercom_jobs", force: :cascade do |t|
+    t.string   "intercom_id"
+    t.integer  "type_identity"
+    t.integer  "status_identity"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "segment_users", force: :cascade do |t|
     t.integer  "segment_id"
@@ -26,12 +52,25 @@ ActiveRecord::Schema.define(version: 20160720182501) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "sync_events", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "user_id"
+    t.integer  "fub_id"
+    t.integer  "fub_created"
+    t.boolean  "sent_to_intercom",     default: false
+    t.boolean  "received_by_intercom", default: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "intercom_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "name"
+    t.integer  "fub_id"
   end
 
 end

@@ -5,5 +5,5 @@ Intercom API.
 
 # TODO
 
-The current solution consists in a Daemon but it should be upgraded to a job
-queue. Each segment should be run in a delayed job.
+- Move segments task to Sidekiq 
+- Testing for ChurnburnerApi::IntercomJobsManager, ChurnburnerApi::EventsManager
