@@ -176,6 +176,8 @@ GEM
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
       redis (~> 3.2, >= 3.2.1)
+    sidekiq-limit_fetch (3.3.0)
+      sidekiq (>= 4)
     slack-ruby-client (0.7.5)
       activesupport
       faraday
@@ -232,6 +234,7 @@ DEPENDENCIES
   rails (~> 5.0.0)
   rspec-rails
   sidekiq
+  sidekiq-limit_fetch
   slack-ruby-client
   spring
   spring-watcher-listen (~> 2.0.0)

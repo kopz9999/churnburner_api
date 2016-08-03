@@ -21,6 +21,7 @@ gem 'puma', '~> 3.0'
 # App
 gem 'intercom', "~> 3.5.1"
 gem 'sidekiq'
+gem 'sidekiq-limit_fetch'
 gem 'figleaf'
 gem 'slack-ruby-client'
 # Use PostgresSQL as the database for Active Record

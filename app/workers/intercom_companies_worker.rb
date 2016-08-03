@@ -1,6 +1,7 @@
 class IntercomCompaniesWorker
   include IntercomWorker
   include Sidekiq::Worker
+  sidekiq_options queue: 'intercom_batch'
 
   def perform(page, page_size)
     intercom_users = self.intercom_client.users.find_all page: page,
