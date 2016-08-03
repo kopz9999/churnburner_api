@@ -34,5 +34,7 @@ class User < ApplicationRecord
   extend Factory
   has_many :segment_users
   has_many :segments, through: :segment_users
+  has_many :user_companies
+  has_many :companies, through: :user_companies
   has_many :sync_events
 end

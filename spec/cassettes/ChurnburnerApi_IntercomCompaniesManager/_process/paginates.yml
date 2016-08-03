@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.intercom.io/counts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 17:49:40 GMT
+      Etag:
+      - W/"53dcfa4db1960b3a6d24b40239f62914"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 88239295d3c056ca20e2f57cce359833bdc30417
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1470246600'
+      X-Request-Id:
+      - ama6370mcv32d0rujflg
+      X-Runtime:
+      - '0.120329'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIALQuolcAA6pWKqksSFWyUkrOL80r0ctILM5Q0gFycgsS8yqVrKoh4kpW
+        RrU6SqXFqUVIQmYmpkDBnNTEFCRBQ6BQSWI6mkhxanpuKoiD0FxbCwAAAP//
+        AwBYTIz6ewAAAA==
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 17:49:38 GMT
+recorded_with: VCR 3.0.3

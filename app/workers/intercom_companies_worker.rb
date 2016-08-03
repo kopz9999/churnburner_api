@@ -14,6 +14,8 @@ class IntercomCompaniesWorker
         (raw_company_name = intercom_user.custom_attributes['company_name'])
       company = find_company intercom_user, raw_company_name.gsub('"', '')
       intercom_user.companies = [company.to_intercom_hash]
+      user = User.retrieve_intercom_response intercom_user.as_json
+      UserCompany.create user: user, company: company
       self.intercom_client.users.save(intercom_user)
     end
   end

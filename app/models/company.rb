@@ -40,6 +40,8 @@ class Company < ApplicationRecord
   extend Factory
 
   has_many :data, class_name: 'CompanyDatum'
+  has_many :user_companies
+  has_many :users, through: :user_companies
 
   DATA_ATTRIBUTES.each do |a|
     has_one :"#{a}_data", -> { where(name: a) }, class_name: 'CompanyDatum'

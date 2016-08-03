@@ -36,4 +36,11 @@ namespace :intercom do
       sleep 30
     end
   end
+
+  desc "Pull down companies and set them into intercom"
+  task :process_companies => :environment do |t, args|
+    Rails.logger.info 'Setting intercom companies ...'
+    ChurnburnerApi::IntercomCompaniesManager.instance.process
+    Rails.logger.info 'Companies synced!!'
+  end
 end

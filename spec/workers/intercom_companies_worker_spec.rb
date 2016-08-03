@@ -69,7 +69,10 @@ RSpec.describe IntercomCompaniesWorker, :vcr do
       it 'creates company based on intercom company' do
         subject
         company = Company.find_by company_identifier: '6'
+        user = User.find_by(email: 'bob@example.com')
+        expect(user).not_to be_nil
         expect(company).not_to be_nil
+        expect(user.companies.first.id).to eq company.id
         expect(company.name).to eq company_name
         data = company.data.find_by(name: 'referral_source')
         expect(data).not_to be_nil
