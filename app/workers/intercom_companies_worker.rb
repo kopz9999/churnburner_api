@@ -10,9 +10,11 @@ class IntercomCompaniesWorker
 
   # @param [Intercom::User] intercom_user
   def process_user(intercom_user)
-    if !intercom_user.custom_attributes.blank? && \
-        (raw_company_name = intercom_user.custom_attributes['company_name'])
-      company = find_company intercom_user, raw_company_name.gsub('"', '')
+    if !intercom_user.custom_attributes.blank? &&
+        (raw_company_name = intercom_user.custom_attributes['company_name']) &&
+        !raw_company_name.blank? &&
+        (company_name = raw_company_name.gsub('"', '')) && !company_name.blank?
+      company = find_company intercom_user, company_name
       intercom_user.companies = [company.to_intercom_hash]
       user = User.retrieve_intercom_response intercom_user.as_json
       UserCompany.create user: user, company: company
