@@ -1,0 +1,269 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.intercom.io/companies
+    body:
+      encoding: UTF-8
+      string: '{"company_id":6,"name":"Ursula and Associates | Keller Williams Realty
+        Partners","custom_attributes":{"referral_source":"Google"}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 09:01:35 GMT
+      Etag:
+      - W/"db9282edadfb184ff7c0ff69d7d8bf07"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1470214920'
+      X-Request-Id:
+      - am9uhfdlv3d2srnsd320
+      X-Runtime:
+      - '0.050850'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAO+yoVcAA1yQT0vEMBDFv0rIuUjrtvbPbU8evIggHkTKmM52I2kSMhOw
+        rP3uptXiYk5vfvPyeMlF8uxRdlK5yYOdZbarXg8J3yWwiaqGAg5N2VZ1WWF9
+        Oqg8HVBpD97/mD8indtP7xOzMK2pz4GiAQF2EEcipzQwkvgSD2gMBvGijdEw
+        kXhCMDyLRwhsMdDaImDyDj2w7Iqyzm+LvC2bTEY//ONl01aZnJzls5l78mhT
+        lzyThETa2V65aHkjkTBcjQwjye6y/0Aab4wmlvvm9W1ZU8YJLV8bf9Fu/nNs
+        F7wBm8xJqUjsptSUg36P6eFrRsAThgCmJxeDWuPunRsNymX5BgAA//8DAL4u
+        VF+MAQAA
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:55:26 GMT
+- request:
+    method: post
+    uri: https://api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"bob@example.com","name":"Bob Smith","custom_attributes":{"domains":"callursula.com","stripe_id":"cus_7MX5Y5gda135Eb","stripe_account_balance":0.0,"stripe_delinquent":false,"stripe_plan_price":1275.0,"stripe_plan_interval":"month","stripe_plan":"One
+        Platform","stripe_subscription_period_start_at":1468679704,"stripe_subscription_status":"active","stripe_card_expires_at":1617148800,"stripe_card_brand":"American
+        Express","stripe_last_charge_at":1468683398,"stripe_last_charge_amount":1275.0,"company_name":"\"Ursula
+        and Associates | Keller Williams Realty Partners\"","company_phone":"678-569-4044
+        | KW Office: 678-494-0644","company_email":"ursula@callursula.com","company_address":"\"220
+        Heritage Walk, Suite 101, Woodstock, GA 30188\"","company_facebook":"\"https://www.facebook.com/TeamUrsulaRealEstate/?fref=ts\"","company_twitter":"\"https://twitter.com/ursulakd\"","company_linkedin":"\"https://www.linkedin.com/in/ursuladahle/\"","company_google_plus":"\"https://plus.google.com/u/0/+UrsulaandAssociates/posts\"","company_youtube":"\"https://www.youtube.com/channel/UCqQXx1ahN7nzOl4OLGsXnvA\"","company_pinterest":"\"\"","company_instagram":"\"\"","company_snapchat":"\"\""}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 09:01:36 GMT
+      Etag:
+      - W/"ba7d60251d1f9bae6eaa9a24b1494a0b"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '499'
+      X-Ratelimit-Reset:
+      - '1470214920'
+      X-Request-Id:
+      - am9uhfimqnilsfadelr0
+      X-Runtime:
+      - '0.132940'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1077'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAPCyoVcAA4xV227jNhD9FUGvdWLJki3JwKJJizQF2t3sPSmyhTCSKJs1
+        RXJFKom7zb/vkLpYilNs/GJ7LucMhzOH31y9l8Rdu40itTtzaYG/lxH4EMRL
+        Ly5IsVh4i8TDDwH0m7DUBPGGsZkLXPB9JRrlrktgisxcUgFliJGJ7Iw8QCUZ
+        Oc1FhakcKkP0i8icDxXVWzRJRZrCIAx4d6Chdtff+rI6AxZWwYakTc3a0EeM
+        ldJW4v7TqG3yICVGIZMETokaQbS2/SmjSk9Dbp/GDO59i+yPO5L5BQSrRRZ4
+        WZlE2JAgh8OxPtWqYeAAL5xzpUROQSPF499YKBM5aCp4WuBZsDBjAqXTmnxt
+        CH6D7o9vzYoQnlLZ2/KaIFRho/ww8ha+lyy9mVuTSmiSjt1tgqIbjoZGjmyN
+        LJ6AhHGywliilKksFw1HF8La0lkqa1FSNunj1NO38yj+9n8SDq16vVcSctL3
+        NljGURSuvG662qCubHPd7lZrqdbzedXmmXGaD0mPsx/yXeKwNVlH1wEPRGZQ
+        d1xkiyCJI/cp5camWsZJ3AtYP95TrQ87FSwCzw+SIJkc032PAyOqi88Xl83+
+        iF23EJZ+EvgC+s+0IqInj/0gTqLllNr8HDkGZiS+M8mWdhz0AtbfGM13w5nj
+        xXIVB4vw7I3349u9v78/LW26JZZEoHTMJxB2mxqumkzlNc1wnstaVKmVnIMC
+        WYlCseC6W7iWTcNmPM34tx/h1nNrwBXZVJg4GfvWNMz7EGET8kZpLAG0xoIa
+        3S4MXhRQroyuAGONVYZOBBXGSdKqC+am0eub5V/LTQF+sLzIDgGQ25VMM2DA
+        cVfW3qk3OAvCKEftMCvbHbrzSIzGW6Emw19Ey1GSdVGO83QHpu+V4FaDR260
+        XnHivGWgS1GPyu06Lq2KSVJTUaQKdVl3grKKVxFKYvh8AkZq80K4kGt6Rw6w
+        OdRFSh4krYlqkVZ+hMoUe940Jqtx+hHgvELuHLhz8SAxRx2grHLmW6jxkRhq
+        igNc1udDqlbw+h71qt+N8Zfn5dz5z/mDMEZq55oyRqFSznsCTO+dt9gLTmr1
+        xR09IXIruEFbRfHJcpWchF4YGohr56os8YrWjvGESXjircJwlNi/oe3knB0N
+        UR8HRWG7YArGZ9r5HbuDw0yca2C7mfOhoZo4vufPnGshChzUHK2X5w4qURxP
+        Si1RVzMhdhZqspGdw+7kRwJV2xhz7Atzr2T+c1mT8pWeHr1TrgncWM3a4+yK
+        SRIO9Y4UlB8V0TtsKuVddgFbFIgJwkaIDTOz3KgJiDGcts6Wfu7Nf2pPgjd8
+        uOC5FOrJSfai0U1Gjmrq7BYOh4pzwuaffv367ubBh+2biP97xcKrPy/VDb87
+        n06F3UF89y3kxIWagddXQ3XsUhwk0gxJj4/fAQAA//8DAFYLU0i6CQAA
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:55:27 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/users?email=bob@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 09:01:36 GMT
+      Etag:
+      - W/"ba7d60251d1f9bae6eaa9a24b1494a0b"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '498'
+      X-Ratelimit-Reset:
+      - '1470214920'
+      X-Request-Id:
+      - am9uhfn5okrae0u0bmgg
+      X-Runtime:
+      - '0.047521'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAPCyoVcAA4xV227jNhD9FUGvdWLJki3JwKJJizQF2t3sPSmyhTCSKJs1
+        RXJFKom7zb/vkLpYilNs/GJ7LucMhzOH31y9l8Rdu40itTtzaYG/lxH4EMRL
+        Ly5IsVh4i8TDDwH0m7DUBPGGsZkLXPB9JRrlrktgisxcUgFliJGJ7Iw8QCUZ
+        Oc1FhakcKkP0i8icDxXVWzRJRZrCIAx4d6Chdtff+rI6AxZWwYakTc3a0EeM
+        ldJW4v7TqG3yICVGIZMETokaQbS2/SmjSk9Dbp/GDO59i+yPO5L5BQSrRRZ4
+        WZlE2JAgh8OxPtWqYeAAL5xzpUROQSPF499YKBM5aCp4WuBZsDBjAqXTmnxt
+        CH6D7o9vzYoQnlLZ2/KaIFRho/ww8ha+lyy9mVuTSmiSjt1tgqIbjoZGjmyN
+        LJ6AhHGywliilKksFw1HF8La0lkqa1FSNunj1NO38yj+9n8SDq16vVcSctL3
+        NljGURSuvG662qCubHPd7lZrqdbzedXmmXGaD0mPsx/yXeKwNVlH1wEPRGZQ
+        d1xkiyCJI/cp5camWsZJ3AtYP95TrQ87FSwCzw+SIJkc032PAyOqi88Xl83+
+        iF23EJZ+EvgC+s+0IqInj/0gTqLllNr8HDkGZiS+M8mWdhz0AtbfGM13w5nj
+        xXIVB4vw7I3349u9v78/LW26JZZEoHTMJxB2mxqumkzlNc1wnstaVKmVnIMC
+        WYlCseC6W7iWTcNmPM34tx/h1nNrwBXZVJg4GfvWNMz7EGET8kZpLAG0xoIa
+        3S4MXhRQroyuAGONVYZOBBXGSdKqC+am0eub5V/LTQF+sLzIDgGQ25VMM2DA
+        cVfW3qk3OAvCKEftMCvbHbrzSIzGW6Emw19Ey1GSdVGO83QHpu+V4FaDR260
+        XnHivGWgS1GPyu06Lq2KSVJTUaQKdVl3grKKVxFKYvh8AkZq80K4kGt6Rw6w
+        OdRFSh4krYlqkVZ+hMoUe940Jqtx+hHgvELuHLhz8SAxRx2grHLmW6jxkRhq
+        igNc1udDqlbw+h71qt+N8Zfn5dz5z/mDMEZq55oyRqFSznsCTO+dt9gLTmr1
+        xR09IXIruEFbRfHJcpWchF4YGohr56os8YrWjvGESXjircJwlNi/oe3knB0N
+        UR8HRWG7YArGZ9r5HbuDw0yca2C7mfOhoZo4vufPnGshChzUHK2X5w4qURxP
+        Si1RVzMhdhZqspGdw+7kRwJV2xhz7Atzr2T+c1mT8pWeHr1TrgncWM3a4+yK
+        SRIO9Y4UlB8V0TtsKuVddgFbFIgJwkaIDTOz3KgJiDGcts6Wfu7Nf2pPgjd8
+        uOC5FOrJSfai0U1Gjmrq7BYOh4pzwuaffv367ubBh+2biP97xcKrPy/VDb87
+        n06F3UF89y3kxIWagddXQ3XsUhwk0gxJj4/fAQAA//8DAFYLU0i6CQAA
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:55:27 GMT
+recorded_with: VCR 3.0.3

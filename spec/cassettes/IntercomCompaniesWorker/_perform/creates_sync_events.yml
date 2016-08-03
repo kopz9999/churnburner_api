@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.intercom.io/users?page=1&per_page=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 09:24:25 GMT
+      Etag:
+      - W/"60f8738ca7b8103f704e706a0b9ae963"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - eb7b27c20f3ab4c688713817704579fbca75492c
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1470216300'
+      X-Request-Id:
+      - am9urts3r6hb26em6ktg
+      X-Runtime:
+      - '0.111124'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        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
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 09:18:17 GMT
+recorded_with: VCR 3.0.3

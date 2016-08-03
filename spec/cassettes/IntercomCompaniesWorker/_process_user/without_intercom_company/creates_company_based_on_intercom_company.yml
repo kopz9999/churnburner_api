@@ -1,0 +1,412 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.intercom.io/companies?name=Ursula%20and%20Associates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 08:56:56 GMT
+      Server:
+      - nginx
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1470214620'
+      X-Request-Id:
+      - am9ufbbvlklciugn2cq0
+      X-Runtime:
+      - '0.023967'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIANixoVcAA6pWKqksSFWyUkotKsov0svJLC5R0lEqSi0sTS0uic9MAcok
+        5lqWpiUlleVk5yRnlqbnGSUXGgDVgDUUK1lFVysl56eAjMjLL4lPyy/NSwHK
+        5qYWFyemg0Sd83MLEvMqFfzySxTcwLK1sbUAAAAA//8DAOkHKAx3AAAA
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:50:47 GMT
+- request:
+    method: post
+    uri: https://api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"bob@example.com","name":"Bob Smith","custom_attributes":{"domains":"callursula.com","stripe_id":"cus_7MX5Y5gda135Eb","stripe_account_balance":0.0,"stripe_delinquent":false,"stripe_plan_price":1275.0,"stripe_plan_interval":"month","stripe_plan":"One
+        Platform","stripe_subscription_period_start_at":1468679704,"stripe_subscription_status":"active","stripe_card_expires_at":1617148800,"stripe_card_brand":"American
+        Express","stripe_last_charge_at":1468683398,"stripe_last_charge_amount":1275.0,"company_name":"\"Ursula
+        and Associates\"","company_phone":"678-569-4044 | KW Office: 678-494-0644","company_email":"ursula@callursula.com","company_address":"\"220
+        Heritage Walk, Suite 101, Woodstock, GA 30188\"","company_facebook":"\"https://www.facebook.com/TeamUrsulaRealEstate/?fref=ts\"","company_twitter":"\"https://twitter.com/ursulakd\"","company_linkedin":"\"https://www.linkedin.com/in/ursuladahle/\"","company_google_plus":"\"https://plus.google.com/u/0/+UrsulaandAssociates/posts\"","company_youtube":"\"https://www.youtube.com/channel/UCqQXx1ahN7nzOl4OLGsXnvA\"","company_pinterest":"\"\"","company_instagram":"\"\"","company_snapchat":"\"\""}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 08:56:57 GMT
+      Etag:
+      - W/"e8fdaf43eda661250bae346a9549f25c"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '499'
+      X-Ratelimit-Reset:
+      - '1470214620'
+      X-Request-Id:
+      - am9ufbges1rvegrn6ok0
+      X-Runtime:
+      - '0.122057'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIANmxoVcAA4xVbW/jNgz+K4a/Lm3s2I6dAMPaDVkHbHfd7q0d7gaDtpVE
+        iyzpLKltdst/HyXbid3ccM2XJORDPqRJPv7i670k/tI3ijT+xKcV/k5SCCHK
+        kiCrSDWbBbNFgB8C6Lew3IK4YWziAxd8Xwuj/OUamCITn9RAGeYoRHFFnqCW
+        jFyWosZQDrUl+lEU3tua6i2apCKmshmO+R5AQ+Mvv/RldQYsrIYNyU3DWugB
+        sVK6Svy/jdounqREFDJJ4JSoQYrWtr9kVOkx5ONfmIaJEjQVPK+QCcOsCZTO
+        G/LZEPwG3RfnzIoQnlPZ28qGgCaVQ4VxGszCYJEEE78htdAkH7rbAEU3HA1G
+        DmxGVs+SxPMwRSxRylZWCsPRhWmVKCmwXDZiTdmoy7Gnb/YM//F/Ak7zebVX
+        EkrS70KUZGkaz4Nu9i2oK9sOw99qLdVyOq3bODvs6THoMPkm3w2ugik6ui7x
+        kciu0Y6LYhYtstR/TrlxoY5xhHsB67tHqvVp46NZFITRIlqM2vTfAK9Evfqw
+        ujH7M3bdpnD0I+AL6D/QmoiePAujbJEmY2r7c+A4MiPxgw12tEPQC1h/ZrTc
+        HXvOZsk8i2bx1evg29N9fHy8XLtwRyyJwMOejlIc7DUZrkyhyoYWuM/rRtS5
+        E4STPjgBwVPmuju4lk3DZrjN+Ldf4dbjTlWRTY2Bo7VvTcd9PyJcQGmUxhJA
+        ayzI6PZgcFBAubLKAIyZRhkGnUQpxEnSqgrG5umr++TPZFNBGCWr4gSA0p1k
+        XgADjreyDC6Do7MijHLUDnuyXdOdRyIap0JtRDhLk0GQc1GO+/QA9rnXgjuF
+        HLjResuJ9zsDvRbNoNzuiUunYpI0VFS5QtXUnaDMs3m6SIP46wGI1Fa/fSg1
+        fSCntCU0VU6eJG2IajOhKIVxlgXBGFM0uP2Y4LpG7hK4t3qSGKNOqZxyllto
+        UMKPNWURHuvXIXUreP0z6hQ879b4k//eDc1DWu9auW3H2X7y/RNUbgW32Hma
+        XSTzxUUcxLH3r/frnXe7XuMAlp71xIv4IpjH8SCwf3+1e3F1tiI9DqrK9WjL
+        wVek9wv2jqtKvDtgu4n31lBNvDAIJ96dEBWuYYnWm2sPdSbLRqWuUTULIXYu
+        1ejeOoe7uHcE6rbtNwTYyk6NTH9YN2T9vR633unSKN1Qq9p2dtUoCFd2RyrK
+        z4roHS6U8i66gi2e/yjDRogNs5tq1CiJNVy2zpZ+Gky/azvB+Z3GN5VCPetk
+        L4w2BTmrqbO7dLgynBM2ff/T5z/un0LYvk75P7csvv3tRt3zh+vxVrgLw7e6
+        SzlyoSLg+Bqoz12Kg0SaY9Dh8B8AAAD//wMAGN4SbDYJAAA=
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:50:48 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/companies?name=Ursula%20and%20Associates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 08:56:57 GMT
+      Server:
+      - nginx
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '498'
+      X-Ratelimit-Reset:
+      - '1470214620'
+      X-Request-Id:
+      - am9ufbl4sh1q1fg32nog
+      X-Runtime:
+      - '0.016306'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIANmxoVcAA6pWKqksSFWyUkotKsov0svJLC5R0lEqSi0sTS0uic9MAcok
+        5lqWpiXlmBRnGBYapqUbG+XlpwPVgDUUK1lFVysl56eAjMjLL4lPyy/NSwHK
+        5qYWFyemg0Sd83MLEvMqFfzySxTcwLK1sbUAAAAA//8DAHO+52d3AAAA
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:50:48 GMT
+- request:
+    method: post
+    uri: https://api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"domains":"callursula.com","stripe_id":"cus_7MX5Y5gda135Eb","stripe_account_balance":0.0,"stripe_delinquent":false,"stripe_plan_price":1275.0,"stripe_plan_interval":"month","stripe_plan":"One
+        Platform","stripe_subscription_period_start_at":1468679704,"stripe_subscription_status":"active","stripe_card_expires_at":1617148800,"stripe_card_brand":"American
+        Express","stripe_last_charge_at":1468683398,"stripe_last_charge_amount":1275.0,"company_name":"\"Ursula
+        and Associates\"","company_phone":"678-569-4044 | KW Office: 678-494-0644","company_email":"ursula@callursula.com","company_address":"\"220
+        Heritage Walk, Suite 101, Woodstock, GA 30188\"","company_facebook":"\"https://www.facebook.com/TeamUrsulaRealEstate/?fref=ts\"","company_twitter":"\"https://twitter.com/ursulakd\"","company_linkedin":"\"https://www.linkedin.com/in/ursuladahle/\"","company_google_plus":"\"https://plus.google.com/u/0/+UrsulaandAssociates/posts\"","company_youtube":"\"https://www.youtube.com/channel/UCqQXx1ahN7nzOl4OLGsXnvA\"","company_pinterest":"\"\"","company_instagram":"\"\"","company_snapchat":"\"\""},"companies":[{"company_id":"1","name":"Ursula
+        and Associates","custom_attributes":{"phone":"678-569-4044 | KW Office: 678-494-0644","email":"ursula@callursula.com","address":"220
+        Heritage Walk, Suite 101, Woodstock, GA 30188","facebook":"https://www.facebook.com/TeamUrsulaRealEstate/?fref=ts","twitter":"https://twitter.com/ursulakd","linkedin":"https://www.linkedin.com/in/ursuladahle/","google_plus":"https://plus.google.com/u/0/+UrsulaandAssociates/posts","youtube":"https://www.youtube.com/channel/UCqQXx1ahN7nzOl4OLGsXnvA"}}],"id":"57a1a38508ded220290000ea","email":"bob@example.com","user_id":null}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 08:56:58 GMT
+      Etag:
+      - W/"9df75b9091514c4511b8a02d40dffa9a"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '497'
+      X-Ratelimit-Reset:
+      - '1470214620'
+      X-Request-Id:
+      - am9ufbq8ubma02qneb00
+      X-Runtime:
+      - '0.464823'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIANqxoVcAA4xVbW/jNgz+K4a/Lm3s2I6dAMPaDV0HbHfd7q0deoNB23Ki
+        xZZ0lpQ2u/W/j5JfYjcdrvmShHzIh5TIR19ddRDEXbtaksadubTA31EMPgRJ
+        5CUFKRYLb7Hy8EMA/QaWGhDTVTVzgXF2qLmW7rqESpKZS2qgFebIeHZBHqEW
+        FTnPeY2hDGpD9CPPnPc1VVs0CUl0YTIM+fagoHHXX/uyOgMWVsOGpLqpWugT
+        YoWwlbh/a7ldPQqBKGQSwCiRoxSt7XBeUammkPvnmMF9aDP74xPJ/AKC5SIL
+        vKxcxXggQQ7Htj42UlfgACucSyl5TkEhxdNfWGjFc1CUs7TAXrAwYwKp0oZ8
+        0QS/QfXtW7MkhKVU9La8IZiqsCg/jL2F760ib+Y2pOaKpGN3GyDphqFBi5FN
+        i+JZknDpJ4glUprKcq4ZujCtLb1KRcNLWk3Ocerpj/MEf/8/AcejenOQAnLS
+        n20QJXEcLr1uulpQV7a5bnerlJDr+bxu48w4zYegp9k3+a5x2HTW0XWJByIz
+        qDvGs0WwSmL3OeXGhlrGCe4VrB8eqFLHnQoWgecHq2A1adN9hwPD66tPV9f6
+        cMKu2hSWfgJ8Bf0nWhPekyd+kKziaEptfo4cAzMS702wpR2DXsH6c0Xz3dBz
+        soiWSbAIL956377dh4eH89KGW2JBOErHfJLCbpNmUmcyb2iG81w2vE6t5BwV
+        yEoUigVT3cK1bAo242nGv/0It557k1ySTY2Bk7FvTcO8DwgbkGupsARQCgvS
+        ql0YvCigTBpdgarSVhk6EZSIE6RVF4xN4zd30Z/RpgA/iK6yIwByu5JpBhUw
+        3JW1d+4NzoJUlKF2mJXtmu48AtF4K9RE+Is4GgVZF2U4T3sw515zZjV45Ebr
+        DSPO7xWokjejcrsTF1bFBGkoL1KJuqw6QVkmyxglMXw5AJHKvBAu5IruyTFt
+        Dk2RkkdBGyLbTEs/9sMk8bwpJmtw+jHBZY3cOTDn6lFgjDymssqZb6HBR2Ko
+        KQlwWV+G1K3g9WfUq343xp9flvPP7uiBEFvODHYZJ2fRcnUWemHo/Ov8euvc
+        lCVewNoxnnAVnnnLMBwF9i9kOxcXJyPS46AobI+mHHyEnV+wdxxV4txCtZs5
+        7zVVxPE9f+bccl7gGOZovb50UGeSZFJqiaqZcb6zqSb71jnsxn0gULdtvyNQ
+        XZlbI/MfyoaU36tp650uTdKNtaptZ1dMgnBkd6Sg7KSI3mFDKeuiC9ji+k8y
+        bDjfVGZStZwkMYbz1tnSz735d20neH/H65sLLp91cuBa6Yyc1NTZbTocGcZI
+        Nf/405c/7h592L6N2T83VXjz27W8Y/vL6VTYDcNX3aacuFAR8PoaqE9dkoFA
+        miHo6ek/AAAA//8DAEi6S56YCQAA
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:50:49 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/companies?name=Ursula%20and%20Associates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 08:56:59 GMT
+      Etag:
+      - W/"6c525a76b74ea2bf1165558d7c3f8e1c"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 429ec5d0299512bdca8f3e1ac5de29a87a0b8196
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '496'
+      X-Ratelimit-Reset:
+      - '1470214620'
+      X-Request-Id:
+      - am9ufc17qecki48nt7ag
+      X-Runtime:
+      - '0.052196'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIANuxoVcAA2xSXY/TMBD8K5ZfSRu7zfVLQlAhdEggKg5OPQmhyok3jalj
+        m9imV47+dzZJo6tOvO3Ozszuev1Ew8kBXdHC1k6YE02GaKckwhyBLriZC55z
+        KaazST5lebmcM8amhcC6cK4n/4y+Wj46h5gRdet63/ioBRFGkrX3tlAigG97
+        NICR3IlAVzybswnPZnyR0Ojkf/HamlDp0847MNiJJdSD98qaXWGjCR0SPTRD
+        yhMaxN7T1dOwH6ZjrXygQ+X7j3Prsq/BhGviBRrIz4xO4LQwSMaoiD7YGicN
+        jcpjuxZ6uMqa1mQ2X4xuZstRxrKM/CUft2RTlqqAFWkr2TIbsVmWoT3UQmkU
+        xO6h3hZC6z4c4xnat5WywU2RMZkw8gEahdMD2Qp9SMjXqAIQznhCttZKnKdA
+        9HZNpowvFqguRQG5tQeUVyE4v0rT4/E4HuC2R/oNRN2f6Q6Efu8DHiB9UzZQ
+        vg7tqcJRhQDNlcUF6dT9sAeJRK3MAaQyL5oNcEdX5qKQotKQompv7V7Dzuno
+        r4RtOu5LfZuUpa/6KfEvPX+l1FnfTXmyMcQcXvS+oJ1FUQljQKf37359eXjk
+        ovo8N382Ott8uvUP5veans//AAAA//8DANHHQr8NAwAA
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 08:50:50 GMT
+recorded_with: VCR 3.0.3

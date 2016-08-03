@@ -1,0 +1,353 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.intercom.io/companies
+    body:
+      encoding: UTF-8
+      string: '{"company_id":6,"name":"Ursula and Associates | Keller Williams Realty
+        Partners","custom_attributes":{"referral_source":"Google"}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 17:10:21 GMT
+      Etag:
+      - W/"b66f8ad681cb8baa14d306605b8f3ba5"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 88239295d3c056ca20e2f57cce359833bdc30417
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1470244260'
+      X-Request-Id:
+      - ama5h72pvqr0b7o6bo7g
+      X-Runtime:
+      - '0.044665'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAH0lolcAA1SQQU+EMBCF/0rTMzHAgizc9uTBizExHowhY5lla0rbdNpE
+        svLfHVCi9jTzzZuXN73KOHuUnVRu8mBnme1VrwfGtwy2om6ggMOxauumqrE5
+        H1TODxTPwftv8XuiS/vhPTML0+r6FCgZEGAHcSJySkNEEp/iHo3BIJ61MRom
+        Eo8IJs7iAUK0GGhNEZC1Qw9RdkXV5GWRt9Uxk8kP/3lVlWWRycnZeDFzTx4t
+        Z8kzSUikne2VSzZuJBGGveWVCCPJ7rr/ALc3RlOU++TldVldxglt/Cv8Qbv4
+        V7EteAOWxVypRNFNnDQG/Zb48NUj4BlDANOTS0GtdnfOjQblsnwBAAD//wMA
+        RnVly4wBAAA=
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 17:10:20 GMT
+- request:
+    method: post
+    uri: https://api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"bob@example.com","name":"Bob Smith","custom_attributes":{"domains":"callursula.com","stripe_id":"cus_7MX5Y5gda135Eb","stripe_account_balance":0.0,"stripe_delinquent":false,"stripe_plan_price":1275.0,"stripe_plan_interval":"month","stripe_plan":"One
+        Platform","stripe_subscription_period_start_at":1468679704,"stripe_subscription_status":"active","stripe_card_expires_at":1617148800,"stripe_card_brand":"American
+        Express","stripe_last_charge_at":1468683398,"stripe_last_charge_amount":1275.0,"company_name":"\"Ursula
+        and Associates | Keller Williams Realty Partners\"","company_phone":"678-569-4044
+        | KW Office: 678-494-0644","company_email":"ursula@callursula.com","company_address":"\"220
+        Heritage Walk, Suite 101, Woodstock, GA 30188\"","company_facebook":"\"https://www.facebook.com/TeamUrsulaRealEstate/?fref=ts\"","company_twitter":"\"https://twitter.com/ursulakd\"","company_linkedin":"\"https://www.linkedin.com/in/ursuladahle/\"","company_google_plus":"\"https://plus.google.com/u/0/+UrsulaandAssociates/posts\"","company_youtube":"\"https://www.youtube.com/channel/UCqQXx1ahN7nzOl4OLGsXnvA\"","company_pinterest":"\"\"","company_instagram":"\"\"","company_snapchat":"\"\""}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 17:10:22 GMT
+      Etag:
+      - W/"e6c9f8667a0fdbd17b24dbe4be7b15b6"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 88239295d3c056ca20e2f57cce359833bdc30417
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '499'
+      X-Ratelimit-Reset:
+      - '1470244260'
+      X-Request-Id:
+      - ama5h79krdkova7g1u5g
+      X-Runtime:
+      - '0.103374'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAH4lolcAA5xW2W7jNhT9FUGvdWKtlmygaNIiTYF2JrMnRaYQriTKZk2R
+        HJFK4k7z772kJFuKZ5CgfrFzl3Puznx19U4Sd+W2ijTuzKUl/o4T8CFMYy8t
+        SRkEXrD08EMA9cYsM0a8ZWzmAhd8V4tWuasKmCIzl9RAGWLkIj8jD1BLRk4L
+        UaMrh9oQ/Sxy531N9QZFUpG2NAh7vDvQ0Lirr0NYvQADq2FNsrZhnekj2kpp
+        I3H/btVm+SAlWiGTBE6JGkF0st0po0pPTW6f2uzVuw7ZH1ck90sIF0Eeenm1
+        TLAgYQGHtD42qmXgAC+dc6VEQUEjxePsOYrFk6JHyziJYpJUYWGKDsUzFM6/
+        zu+EMdI415QxCrVy3hFgeue8gUZz0mAQf2G1mChAU8GzEguK1TEiUDpryJeW
+        4DfooQdWrAjhGZWDrGgIkpXWyo8SL/C9ZezN3IbUQpNsrO4cFF1zFLRyJGtl
+        OQWJoiAI0JYoZSIrRMtRhbA2OZbJRlSUTZo51Qw9PbK//Y7DoZivdkpCQYbq
+        h3GaJNHC60e8M+rDNjPnbrSWajWf152fmen53mnU5u/xXeLEt3lP1wPvicy2
+        bLnIg3CZJu5TyrV1tYwTuxewfrinWh8WOwxCzw+X4XKSpvsOR0rUF58uLtvd
+        EbvuICz9xPAF9J9oTcRAnvphukziKbX5OVLsmZH4zjhb2rHRC1h/ZbTY7nNO
+        g3iRhkF09tp7vrv39/enlXW3xJIIvF/zCYTdpparNldFQ3Oc56oRdWbv3uEM
+        2juJF4vrfuE6Ng3r8TTjn8MId5pbA67IukbHydh3ov287y2sQ9EqjSGA1hhQ
+        q7uFwUYB5cpcHmCstbejv8QK7STp7g/6Zsmrm/jPeF2CH8YX+cEACruSWQ4M
+        OO7Kyjv19sqSMMrxdpiV7ZPuNRKtsSvUePhBEo+crIpynKc7MHWvBbcPwUiN
+        0itOnDcMdCWaUbh9xaW9YpI0VJSZwsdB9wdlkS4SvMvRtx3QUptnyoVC0zty
+        gC2gKTPyIGlDVIe08BM/SlPPm9rkDU4/ApzXyF0Ady4eJPqoA5S9nMUGGnyp
+        9jGlIS7rt03q7uANNRrehX6MP//fg//ZHT0yciO4QVsk6Um8WJ5EXhQZiGvn
+        qqqwRSvHaKJldOItomjkODzk3eScHQ3RYAdlaatgAsb/FZzfsDo4zMS5Brad
+        Oe9bqonje/7MuRaixEEtUHp57uAlStNJqBXe1VyIrYWabGSvsDv5gUDdFcak
+        fWH6SuY/VQ2pftTT1PvLNYEbX7MunW05ccKh3pKS8qMgBoV1pbz3LmGDB2KC
+        sBZizcwst2oCYgSnnbKjn3vzH7pMsMOHBs+lUE8y2YlWtzk5iqmXWzgcKs4J
+        m3/85cvbmwcfNq8T/s8Vi67+uFQ3/O58OhV2B/Hdt5ATFd4MbF8D9bFKcZBI
+        s3d6fPwPAAD//wMAHtFUMD8KAAA=
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 17:10:21 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/companies?name=Ursula%20and%20Associates%20%7C%20Keller%20Williams%20Realty%20Partners
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 17:10:22 GMT
+      Etag:
+      - W/"b66f8ad681cb8baa14d306605b8f3ba5"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 88239295d3c056ca20e2f57cce359833bdc30417
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '498'
+      X-Ratelimit-Reset:
+      - '1470244260'
+      X-Request-Id:
+      - ama5h7e51u9h9lffs0k0
+      X-Runtime:
+      - '0.042194'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAH4lolcAA1SQQU+EMBCF/0rTMzHAgizc9uTBizExHowhY5lla0rbdNpE
+        svLfHVCi9jTzzZuXN73KOHuUnVRu8mBnme1VrwfGtwy2om6ggMOxauumqrE5
+        H1TODxTPwftv8XuiS/vhPTML0+r6FCgZEGAHcSJySkNEEp/iHo3BIJ61MRom
+        Eo8IJs7iAUK0GGhNEZC1Qw9RdkXV5GWRt9Uxk8kP/3lVlWWRycnZeDFzTx4t
+        Z8kzSUikne2VSzZuJBGGveWVCCPJ7rr/ALc3RlOU++TldVldxglt/Cv8Qbv4
+        V7EteAOWxVypRNFNnDQG/Zb48NUj4BlDANOTS0GtdnfOjQblsnwBAAD//wMA
+        RnVly4wBAAA=
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 17:10:22 GMT
+- request:
+    method: post
+    uri: https://api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"domains":"callursula.com","stripe_id":"cus_7MX5Y5gda135Eb","stripe_account_balance":0.0,"stripe_delinquent":false,"stripe_plan_price":1275.0,"stripe_plan_interval":"month","stripe_plan":"One
+        Platform","stripe_subscription_period_start_at":1468679704,"stripe_subscription_status":"active","stripe_card_expires_at":1617148800,"stripe_card_brand":"American
+        Express","stripe_last_charge_at":1468683398,"stripe_last_charge_amount":1275.0,"company_name":"\"Ursula
+        and Associates | Keller Williams Realty Partners\"","company_phone":"678-569-4044
+        | KW Office: 678-494-0644","company_email":"ursula@callursula.com","company_address":"\"220
+        Heritage Walk, Suite 101, Woodstock, GA 30188\"","company_facebook":"\"https://www.facebook.com/TeamUrsulaRealEstate/?fref=ts\"","company_twitter":"\"https://twitter.com/ursulakd\"","company_linkedin":"\"https://www.linkedin.com/in/ursuladahle/\"","company_google_plus":"\"https://plus.google.com/u/0/+UrsulaandAssociates/posts\"","company_youtube":"\"https://www.youtube.com/channel/UCqQXx1ahN7nzOl4OLGsXnvA\"","company_pinterest":"\"\"","company_instagram":"\"\"","company_snapchat":"\"\""},"companies":[{"company_id":"6","name":"Ursula
+        and Associates | Keller Williams Realty Partners","custom_attributes":{"referral_source":"Google"}}],"id":"57a1a38508ded220290000ea","email":"bob@example.com","user_id":null}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Aug 2016 17:10:23 GMT
+      Etag:
+      - W/"89603dc4ee55e3f02b41bc367a0ef7a8"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 88239295d3c056ca20e2f57cce359833bdc30417
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '497'
+      X-Ratelimit-Reset:
+      - '1470244260'
+      X-Request-Id:
+      - ama5h7jjsph8g7h6l8q0
+      X-Runtime:
+      - '0.111823'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAH8lolcAA5xW2W7jNhT9FUGvdWKtlmygaNIiTYF2JrMnRaYQriTKZk2R
+        HJFK4k7z772kJFuKZ5CgfrFzl3Puznx19U4Sd+W2ijTuzKUl/o4T8CFMYy8t
+        SRkEXrD08EMA9cYsM0a8ZWzmAhd8V4tWuasKmCIzl9RAGWLkIj8jD1BLRk4L
+        UaMrh9oQ/Sxy531N9QZFUpG2NAh7vDvQ0Lirr0NYvQADq2FNsrZhnekj2kpp
+        I3H/btVm+SAlWiGTBE6JGkF0st0po0pPTW6f2uzVuw7ZH1ck90sIF0Eeenm1
+        TLAgYQGHtD42qmXgAC+dc6VEQUEjxePsOYrFk6JHyziJYpJUYWGKDsUzFM6/
+        zu+EMdI415QxCrVy3hFgeue8gUZz0mAQf2G1mChAU8GzEguK1TEiUDpryJeW
+        4DfooQdWrAjhGZWDrGgIkpXWyo8SL/C9ZezN3IbUQpNsrO4cFF1zFLRyJGtl
+        OQWJoiAI0ZYoZSIrRMtRhbA2OZbJRlSUTZo51Qw9PbK//Y7DoZivdkpCQYbq
+        h3GaJNHC60e8M+rDNjPnbrSWajWf152fmen53mnU5u/xXeLEt3lP1wPvicy2
+        bLnIg3CZJu5TyrV1tYwTuxewfrinWh8WOwxCzw+X4XKSpvsOR0rUF58uLtvd
+        EbvuICz9xPAF9J9oTcRAnvphukziKbX5OVLsmZH4zjhb2rHRC1h/ZbTY7nNO
+        g3iRhkF09tp7vrv39/enlXW3xJIIvF/zCYTdpparNldFQ3Oc56oRdWbv3uEM
+        2juJF4vrfuE6Ng3r8TTjn8MId5pbA67IukbHydh3ov287y2sQ9EqjSGA1hhQ
+        q7uFwUYB5cpcHmCstbejv8QK7STp7g/6Zsmrm/jPeF2CH8YX+cEACruSWQ4M
+        OO7Kyjv19sqSMMrxdpiV7ZPuNRKtsSvUePhBEo+crIpynKc7MHWvBbcPwUiN
+        0itOnDcMdCWaUbh9xaW9YpI0VJSZwsdB9wdlkS4SvMvRtx3QUptnyoVC0zty
+        gC2gKTPyIGlDVIe08BM/SlPPm9rkDU4/ApzXyF0Ady4eJPqoA5S9nMUGGnyp
+        9jGlIS7rt03q7uANNRrehX6MP//fg//ZHT0yciO4QVsk6Um8WJ5EXhQZiGvn
+        qqqwRSvHaKJldOItomjkODzk3eScHQ3RYAdlaatgAsb/FZzfsDo4zMS5Brad
+        Oe9bqonje/7MuRaixEEtUHp57uAlStNJqBXe1VyIrYWabGSvsDv5gUDdFcak
+        fWH6SuY/VQ2pftTT1PvLNYEbX7MunW05ccKh3pKS8qMgBoV1pbz3LmGDB2KC
+        sBZizcwst2oCYgSnnbKjn3vzH7pMsMOHBs+lUE8y2YlWtzk5iqmXWzgcKs4J
+        m3/85cvbmwcfNq8T/s8Vi67+uFQ3/O58OhV2B/Hdt5ATFd4MbF8D9bFKcZBI
+        s3d6fPwPAAD//wMA/mZsaj8KAAA=
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 17:10:23 GMT
+recorded_with: VCR 3.0.3
