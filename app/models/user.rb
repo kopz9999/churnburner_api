@@ -36,7 +36,7 @@ class User < ApplicationRecord
   has_many :segments, through: :segment_users
   has_many :user_companies
   has_many :companies, through: :user_companies
-  has_one :default_user_companies, :default, class_name: 'UserCompany'
+  has_one :default_user_companies, -> { default }, class_name: 'UserCompany'
   has_one :default_company, through: :default_user_companies
   has_many :sync_events
 
