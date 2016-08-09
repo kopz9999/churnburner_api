@@ -6,6 +6,7 @@ module Fub
         lead.fub_lead = true
         lead.converted_at = Time.parse(fub_person.created)
         lead.synced_at = Time.now
+        lead.source = fub_person.source
         lead.mark_pending
         lead.save
         lead
@@ -18,13 +19,14 @@ module Fub
 
     has_one :fub_lead_datum, foreign_key: :user_id
     delegate :mark_pending, :mark_synced, :converted_at, :converted_at=,
-             :synced_at, :synced_at=, to: :fub_lead_datum
+             :synced_at, :synced_at=, :source, :source=, to: :fub_lead_datum
 
     after_create :create_fub_lead_datum
 
     # @param [Intercom::Contact] intercom_contact
     def setup_intercom_contact(intercom_contact)
       intercom_contact.custom_attributes["fub_lead"] = true
+      intercom_contact.custom_attributes["fub_source"] = self.source
       intercom_contact.custom_attributes["fub_created_at"] =
         self.fub_lead_datum.converted_at.to_i
       intercom_contact.custom_attributes["synced_at"] =

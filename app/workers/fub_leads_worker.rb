@@ -5,7 +5,7 @@ class FubLeadsWorker
 
   sidekiq_options queue: 'fub_leads', retry: 5
   sidekiq_retry_in do
-    10 * rand(1..5)
+    (60 * rand(1..5))
   end
 
   def perform(user_id, app_task_id, page, page_size)
