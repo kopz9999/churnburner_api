@@ -19,7 +19,7 @@ FactoryGirl.define do
       after(:create) do |user, evaluator|
         user.name = "User #{evaluator.suffix}"
         user.email = "user_#{evaluator.suffix}@gmail.com"
-        user.intercom_id = "itercom_user_#{evaluator.suffix}"
+        user.intercom_id = "intercom_user_#{evaluator.suffix}"
       end
     end
   end

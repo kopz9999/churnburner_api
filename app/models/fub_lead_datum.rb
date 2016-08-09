@@ -11,7 +11,6 @@ class FubLeadDatum < ApplicationRecord
 
   def mark_synced
     self.sync_status_identity = StatusIdentities::SYNCED
-    self.synced_at = Time.now
     self.save
   end
 end

@@ -26,7 +26,9 @@ class User < ApplicationRecord
     def fub(fub_person)
       email = fub_person.emails.find{ |e| e[:is_primary] == 1 }
       email = fub_person.emails.first if email.nil?
-      self.new email: email[:value], name: fub_person.name,
+      email_value = email.nil? ?
+        "unknown_#{fub_person.id}@gmail.com" : email[:value]
+      self.new email: email_value.downcase, name: fub_person.name,
                fub_id: fub_person.id
     end
   end
@@ -37,7 +39,7 @@ class User < ApplicationRecord
   has_many :user_companies
   has_many :companies, through: :user_companies
   has_one :default_user_companies, -> { default }, class_name: 'UserCompany'
-  has_one :default_company, through: :default_user_companies
+  has_one :default_company, through: :default_user_companies, source: :company
   has_many :sync_events
 
   def reset_default_company

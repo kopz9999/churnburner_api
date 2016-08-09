@@ -1,0 +1,1801 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.followupboss.com/v1/people?createdAfter=2016-07-09T10:37:29Z&limit=10&offset=0&stage=Lead
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Basic NWU1NDY3OWE3OWMwY2UzMWQyYWQ0MzVmZWJhNGE1MWI4Y2JhYWI6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Aug 2016 10:37:30 GMT
+      Server:
+      - Apache/2.4.18 (Amazon)
+      X-Powered-By:
+      - PHP/5.6.22
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1281'
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        eyJfbWV0YWRhdGEiOnsiY29sbGVjdGlvbiI6InBlb3BsZSIsIm9mZnNldCI6
+        MCwibGltaXQiOjEwLCJ0b3RhbCI6MTkwfSwicGVvcGxlIjpbeyJpZCI6MjQ1
+        NzgsImNyZWF0ZWQiOiIyMDE2LTA4LTA5VDA5OjM1OjUxWiIsInVwZGF0ZWQi
+        OiIyMDE2LTA4LTA5VDA5OjM2OjU3WiIsImxhc3RBY3Rpdml0eSI6IjIwMTYt
+        MDgtMDlUMDk6MzY6NTdaIiwibmFtZSI6IlZhbmVzc2EgUm9tYmF1dCIsImZp
+        cnN0TmFtZSI6IlZhbmVzc2EiLCJsYXN0TmFtZSI6IlJvbWJhdXQiLCJzdGFn
+        ZSI6IkxlYWQiLCJzb3VyY2UiOiJDdXJheXRvciBBcHBvaW50bWVudCIsInNv
+        dXJjZVVybCI6Imh0dHA6XC9cL3RoZWNvbnZlcnNpb25jb2RlLmNvbVwvIiwi
+        Y29udGFjdGVkIjoxLCJwcmljZSI6MCwiYXNzaWduZWRMZW5kZXJJZCI6bnVs
+        bCwiYXNzaWduZWRMZW5kZXJOYW1lIjpudWxsLCJhc3NpZ25lZFVzZXJJZCI6
+        NiwiYXNzaWduZWRUbyI6IkRhcmluICpGcmFuemVuIiwidGFncyI6WyJDdXJh
+        eXRvciBBcHBvaW50bWVudCJdLCJlbWFpbHMiOlt7InZhbHVlIjoidmFuZXNz
+        YUBwaWVzeW5jLmNvbSIsInR5cGUiOiJob21lIiwiaXNfcHJpbWFyeSI6IjEi
+        LCJpc1ByaW1hcnkiOiIxIn1dLCJwaG9uZXMiOlt7InZhbHVlIjoiKzMyNDg4
+        Mzc3MDcxIiwidHlwZSI6ImhvbWUiLCJpc19wcmltYXJ5IjoiMSIsImlzUHJp
+        bWFyeSI6IjEifV0sImFkZHJlc3NlcyI6W10sInBpY3R1cmUiOnsic21hbGwi
+        OiJodHRwczpcL1wvcy5mb2xsb3d1cGJvc3MuY29tXC9waWN0dXJlc1wvMGVh
+        ODI2Y2Y3ZjRiMDFlYzE1YmIzZDg4NDAwYjM3ZWUuanBnIn19LHsiaWQiOjI0
+        NTc2LCJjcmVhdGVkIjoiMjAxNi0wOC0wOFQyMDowNToxMloiLCJ1cGRhdGVk
+        IjoiMjAxNi0wOC0wOFQyMjoxMzowOVoiLCJsYXN0QWN0aXZpdHkiOiIyMDE2
+        LTA4LTA4VDIyOjEzOjA5WiIsIm5hbWUiOiIzMTg1OCBVbmJvdW5kIiwiZmly
+        c3ROYW1lIjoiMzE4NTgiLCJsYXN0TmFtZSI6IlVuYm91bmQiLCJzdGFnZSI6
+        IkxlYWQiLCJzb3VyY2UiOiJDdXJheXRvclN5c3RlbXMuY29tIFdlYnNpdGUi
+        LCJzb3VyY2VVcmwiOiIiLCJjb250YWN0ZWQiOjEsInByaWNlIjowLCJhc3Np
+        Z25lZExlbmRlcklkIjpudWxsLCJhc3NpZ25lZExlbmRlck5hbWUiOm51bGws
+        ImFzc2lnbmVkVXNlcklkIjo3LCJhc3NpZ25lZFRvIjoiTmVhbCBNaXRjaGVs
+        bCIsInRhZ3MiOlsiQ3VyYXl0b3JTeXN0ZW1zLmNvbSBXZWJzaXRlIl0sImVt
+        YWlscyI6W10sInBob25lcyI6W3sidmFsdWUiOiI0MDI2MDk3MDY0IiwidHlw
+        ZSI6ImhvbWUiLCJpc19wcmltYXJ5IjoiMSIsImlzUHJpbWFyeSI6IjEifV0s
+        ImFkZHJlc3NlcyI6W3sidHlwZSI6ImhvbWUiLCJzdHJlZXQiOiIiLCJjaXR5
+        IjoiIiwic3RhdGUiOiJOZWJyYXNrYSIsImNvZGUiOiIiLCJjb3VudHJ5Ijoi
+        In1dLCJwaWN0dXJlIjpudWxsfSx7ImlkIjoyNDU3NSwiY3JlYXRlZCI6IjIw
+        MTYtMDgtMDhUMTk6MjE6MDhaIiwidXBkYXRlZCI6IjIwMTYtMDgtMDhUMTk6
+        MjE6NDZaIiwibGFzdEFjdGl2aXR5IjoiMjAxNi0wOC0wOFQxOToyMTo0Nloi
+        LCJuYW1lIjoiQ3JhaWcgQ3VuaGEiLCJmaXJzdE5hbWUiOiJDcmFpZyIsImxh
+        c3ROYW1lIjoiQ3VuaGEiLCJzdGFnZSI6IkxlYWQiLCJzb3VyY2UiOiJDdXJh
+        eXRvciBBcHBvaW50bWVudCIsInNvdXJjZVVybCI6Imh0dHA6XC9cL2N1cmF5
+        dG9yLmNvbVwvc2NoZWR1bGUiLCJjb250YWN0ZWQiOjEsInByaWNlIjowLCJh
+        c3NpZ25lZExlbmRlcklkIjpudWxsLCJhc3NpZ25lZExlbmRlck5hbWUiOm51
+        bGwsImFzc2lnbmVkVXNlcklkIjo2LCJhc3NpZ25lZFRvIjoiRGFyaW4gKkZy
+        YW56ZW4iLCJ0YWdzIjpbIkN1cmF5dG9yIEFwcG9pbnRtZW50Il0sImVtYWls
+        cyI6W3sidmFsdWUiOiJDcmFpZ2N1bmhhNjhAZ21haWwuY29tIiwidHlwZSI6
+        ImhvbWUiLCJpc19wcmltYXJ5IjoiMSIsImlzUHJpbWFyeSI6IjEifV0sInBo
+        b25lcyI6W3sidmFsdWUiOiIyMzkyOTIwNDQwIiwidHlwZSI6ImhvbWUiLCJp
+        c19wcmltYXJ5IjoiMSIsImlzUHJpbWFyeSI6IjEifV0sImFkZHJlc3NlcyI6
+        W10sInBpY3R1cmUiOm51bGx9LHsiaWQiOjI0NTc0LCJjcmVhdGVkIjoiMjAx
+        Ni0wOC0wOFQxOTowOToxN1oiLCJ1cGRhdGVkIjoiMjAxNi0wOC0wOFQxOTow
+        OToyMVoiLCJsYXN0QWN0aXZpdHkiOiIyMDE2LTA4LTA4VDE5OjA5OjE5WiIs
+        Im5hbWUiOiJLZWl0aCBSb2JpbnNvbiIsImZpcnN0TmFtZSI6IktlaXRoIiwi
+        bGFzdE5hbWUiOiJSb2JpbnNvbiIsInN0YWdlIjoiTGVhZCIsInNvdXJjZSI6
+        IkN1cmF5dG9yIEJsb2cgUmVnaXN0cmF0aW9uIiwic291cmNlVXJsIjoiaHR0
+        cDpcL1wvY3VyYXl0b3IuY29tXC9ibG9nXC9Db25uZWN0LXdpdGgtQ3VyYXl0
+        b3JcLzEyOSIsImNvbnRhY3RlZCI6MCwicHJpY2UiOjAsImFzc2lnbmVkTGVu
+        ZGVySWQiOm51bGwsImFzc2lnbmVkTGVuZGVyTmFtZSI6bnVsbCwiYXNzaWdu
+        ZWRVc2VySWQiOjEwLCJhc3NpZ25lZFRvIjoiU2FyYWggTWFpbGxvdXgiLCJ0
+        YWdzIjpbIkNocmlzIFNtaXRoIiwiQmxvZyIsIkNvbm5lY3Qgd2l0aCBDdXJh
+        eXRvciJdLCJlbWFpbHMiOlt7InZhbHVlIjoia2VpdGhAbmV4dGhvbWUuY29t
+        IiwidHlwZSI6ImhvbWUiLCJpc19wcmltYXJ5IjoiMSIsImlzUHJpbWFyeSI6
+        IjEifV0sInBob25lcyI6W10sImFkZHJlc3NlcyI6W10sInBpY3R1cmUiOnsi
+        c21hbGwiOiJodHRwczpcL1wvcy5mb2xsb3d1cGJvc3MuY29tXC9waWN0dXJl
+        c1wvYjU0ODE1MjAzZjc2OWVhY2M2YjgzZTE0YzQ2Mjc4NmMuanBnIn19LHsi
+        aWQiOjI0NTczLCJjcmVhdGVkIjoiMjAxNi0wOC0wOFQxNzoyMzozMloiLCJ1
+        cGRhdGVkIjoiMjAxNi0wOC0wOFQxNzoyMzozMloiLCJsYXN0QWN0aXZpdHki
+        OiIyMDE2LTA4LTA4VDE3OjIzOjMyWiIsIm5hbWUiOiJKb2huIE1hIEVkd2Fy
+        ZHMiLCJmaXJzdE5hbWUiOiJKb2huIE1hIiwibGFzdE5hbWUiOiJFZHdhcmRz
+        Iiwic3RhZ2UiOiJMZWFkIiwic291cmNlIjoiQ3VyYXl0b3JTeXN0ZW1zLmNv
+        bSBXZWJzaXRlIiwic291cmNlVXJsIjoiIiwiY29udGFjdGVkIjowLCJwcmlj
+        ZSI6MCwiYXNzaWduZWRMZW5kZXJJZCI6bnVsbCwiYXNzaWduZWRMZW5kZXJO
+        YW1lIjpudWxsLCJhc3NpZ25lZFVzZXJJZCI6MTAsImFzc2lnbmVkVG8iOiJT
+        YXJhaCBNYWlsbG91eCIsInRhZ3MiOlsiQ3VyYXl0b3JTeXN0ZW1zLmNvbSBX
+        ZWJzaXRlIl0sImVtYWlscyI6W10sInBob25lcyI6W3sidmFsdWUiOiI5MTg2
+        OTM5Mzk4IiwidHlwZSI6ImhvbWUiLCJpc19wcmltYXJ5IjoiMSIsImlzUHJp
+        bWFyeSI6IjEifV0sImFkZHJlc3NlcyI6W3sidHlwZSI6ImhvbWUiLCJzdHJl
+        ZXQiOiIiLCJjaXR5IjoiIiwic3RhdGUiOiJPa2xhaG9tYSIsImNvZGUiOiIi
+        LCJjb3VudHJ5IjoiIn1dLCJwaWN0dXJlIjpudWxsfSx7ImlkIjoyNDU3Miwi
+        Y3JlYXRlZCI6IjIwMTYtMDgtMDhUMTU6MzY6NTNaIiwidXBkYXRlZCI6IjIw
+        MTYtMDgtMDhUMTU6NDQ6MjBaIiwibGFzdEFjdGl2aXR5IjoiMjAxNi0wOC0w
+        OFQxNTo0NDoyMFoiLCJuYW1lIjoiTm8gbmFtZSIsImZpcnN0TmFtZSI6Ik5v
+        IG5hbWUiLCJsYXN0TmFtZSI6IiIsInN0YWdlIjoiTGVhZCIsInNvdXJjZSI6
+        IkN1cmF5dG9yU3lzdGVtcy5jb20gV2Vic2l0ZSIsInNvdXJjZVVybCI6IiIs
+        ImNvbnRhY3RlZCI6MCwicHJpY2UiOjAsImFzc2lnbmVkTGVuZGVySWQiOm51
+        bGwsImFzc2lnbmVkTGVuZGVyTmFtZSI6bnVsbCwiYXNzaWduZWRVc2VySWQi
+        OjcsImFzc2lnbmVkVG8iOiJOZWFsIE1pdGNoZWxsIiwidGFncyI6WyJDdXJh
+        eXRvclN5c3RlbXMuY29tIFdlYnNpdGUiXSwiZW1haWxzIjpbXSwicGhvbmVz
+        IjpbeyJ2YWx1ZSI6IjcwNDQ1Njg3MDYiLCJ0eXBlIjoiaG9tZSIsImlzX3By
+        aW1hcnkiOiIxIiwiaXNQcmltYXJ5IjoiMSJ9XSwiYWRkcmVzc2VzIjpbeyJ0
+        eXBlIjoiaG9tZSIsInN0cmVldCI6IiIsImNpdHkiOiIiLCJzdGF0ZSI6Ik5v
+        cnRoIENhcm9saW5hIiwiY29kZSI6IiIsImNvdW50cnkiOiIifV0sInBpY3R1
+        cmUiOm51bGx9LHsiaWQiOjI0NTcxLCJjcmVhdGVkIjoiMjAxNi0wOC0wOFQw
+        NTozODo0N1oiLCJ1cGRhdGVkIjoiMjAxNi0wOC0wOFQwNTozODo0N1oiLCJs
+        YXN0QWN0aXZpdHkiOiIyMDE2LTA4LTA4VDA1OjM4OjQ3WiIsIm5hbWUiOiJO
+        byBuYW1lIiwiZmlyc3ROYW1lIjoiTm8gbmFtZSIsImxhc3ROYW1lIjoiIiwi
+        c3RhZ2UiOiJMZWFkIiwic291cmNlIjoiQ3VyYXl0b3IgQmxvZyBSZWdpc3Ry
+        YXRpb24iLCJzb3VyY2VVcmwiOiJodHRwOlwvXC9jdXJheXRvci5jb21cL2Js
+        b2dcL0Nvbm5lY3Qtd2l0aC1DdXJheXRvclwvMTI5IiwiY29udGFjdGVkIjow
+        LCJwcmljZSI6MCwiYXNzaWduZWRMZW5kZXJJZCI6bnVsbCwiYXNzaWduZWRM
+        ZW5kZXJOYW1lIjpudWxsLCJhc3NpZ25lZFVzZXJJZCI6MTAsImFzc2lnbmVk
+        VG8iOiJTYXJhaCBNYWlsbG91eCIsInRhZ3MiOlsiQ2hyaXMgU21pdGgiLCJC
+        bG9nIiwiQ29ubmVjdCB3aXRoIEN1cmF5dG9yIl0sImVtYWlscyI6W3sidmFs
+        dWUiOiJSaWNrZGVubmlzQGVhZ2xlaG0uY29tIiwidHlwZSI6ImhvbWUiLCJp
+        c19wcmltYXJ5IjoiMSIsImlzUHJpbWFyeSI6IjEifV0sInBob25lcyI6W10s
+        ImFkZHJlc3NlcyI6W10sInBpY3R1cmUiOm51bGx9LHsiaWQiOjI0NTY5LCJj
+        cmVhdGVkIjoiMjAxNi0wOC0wN1QxNjoyMTowMFoiLCJ1cGRhdGVkIjoiMjAx
+        Ni0wOC0wN1QxNjoyMTowM1oiLCJsYXN0QWN0aXZpdHkiOiIyMDE2LTA4LTA3
+        VDE2OjIxOjAxWiIsIm5hbWUiOiJBZGFtIFNtaXRoIiwiZmlyc3ROYW1lIjoi
+        QWRhbSIsImxhc3ROYW1lIjoiU21pdGgiLCJzdGFnZSI6IkxlYWQiLCJzb3Vy
+        Y2UiOiJDdXJheXRvciBCbG9nIFJlZ2lzdHJhdGlvbiIsInNvdXJjZVVybCI6
+        Imh0dHA6XC9cL2N1cmF5dG9yLmNvbVwvYmxvZ1wvQ29ubmVjdC13aXRoLUN1
+        cmF5dG9yXC8xMjkiLCJjb250YWN0ZWQiOjAsInByaWNlIjowLCJhc3NpZ25l
+        ZExlbmRlcklkIjpudWxsLCJhc3NpZ25lZExlbmRlck5hbWUiOm51bGwsImFz
+        c2lnbmVkVXNlcklkIjoxMCwiYXNzaWduZWRUbyI6IlNhcmFoIE1haWxsb3V4
+        IiwidGFncyI6WyJDaHJpcyBTbWl0aCIsIkJsb2ciLCJDb25uZWN0IHdpdGgg
+        Q3VyYXl0b3IiXSwiZW1haWxzIjpbeyJ2YWx1ZSI6IlN1Ym1pdGFiY2RAeWFo
+        b28uY29tIiwidHlwZSI6ImhvbWUiLCJpc19wcmltYXJ5IjoiMSIsImlzUHJp
+        bWFyeSI6IjEifV0sInBob25lcyI6W10sImFkZHJlc3NlcyI6W10sInBpY3R1
+        cmUiOnsic21hbGwiOiJodHRwczpcL1wvcy5mb2xsb3d1cGJvc3MuY29tXC9w
+        aWN0dXJlc1wvZDNiZTYxYzIyZjBiOTZmMjdjNWZlNTAzN2FiMjAzZTEuanBn
+        In19LHsiaWQiOjI0NTY4LCJjcmVhdGVkIjoiMjAxNi0wOC0wN1QwNTozNzow
+        OFoiLCJ1cGRhdGVkIjoiMjAxNi0wOC0wOFQxMzoxNTo0M1oiLCJsYXN0QWN0
+        aXZpdHkiOiIyMDE2LTA4LTA4VDEzOjE1OjQzWiIsIm5hbWUiOiJSYW5kYSBI
+        YXJwZXIiLCJmaXJzdE5hbWUiOiJSYW5kYSIsImxhc3ROYW1lIjoiSGFycGVy
+        Iiwic3RhZ2UiOiJMZWFkIiwic291cmNlIjoiQ3VyYXl0b3IgQXBwb2ludG1l
+        bnQiLCJzb3VyY2VVcmwiOiJodHRwOlwvXC9jdXJheXRvci5jb21cL3NjaGVk
+        dWxlIiwiY29udGFjdGVkIjoxLCJwcmljZSI6MCwiYXNzaWduZWRMZW5kZXJJ
+        ZCI6bnVsbCwiYXNzaWduZWRMZW5kZXJOYW1lIjpudWxsLCJhc3NpZ25lZFVz
+        ZXJJZCI6NywiYXNzaWduZWRUbyI6Ik5lYWwgTWl0Y2hlbGwiLCJ0YWdzIjpb
+        InNpbmdsZSBhZ2VudCBwcm9kdWN0IiwiQ3VyYXl0b3IgQXBwb2ludG1lbnQi
+        LCJUb28gRXhwZW5zaXZlIl0sImVtYWlscyI6W3sidmFsdWUiOiJSQU5EQUJS
+        QURMRVkxMUBHTUFJTC5DT00iLCJ0eXBlIjoiaG9tZSIsImlzX3ByaW1hcnki
+        OiIxIiwiaXNQcmltYXJ5IjoiMSJ9XSwicGhvbmVzIjpbeyJ2YWx1ZSI6IjQ2
+        OTUyNTMzNzkiLCJ0eXBlIjoiaG9tZSIsImlzX3ByaW1hcnkiOiIxIiwiaXNQ
+        cmltYXJ5IjoiMSJ9XSwiYWRkcmVzc2VzIjpbXSwicGljdHVyZSI6bnVsbH0s
+        eyJpZCI6MjQ1NjcsImNyZWF0ZWQiOiIyMDE2LTA4LTA3VDA0OjA5OjE1WiIs
+        InVwZGF0ZWQiOiIyMDE2LTA4LTA3VDA0OjA5OjU2WiIsImxhc3RBY3Rpdml0
+        eSI6IjIwMTYtMDgtMDdUMDQ6MDk6NTZaIiwibmFtZSI6IkpvaG4gQ29vcGVy
+        IiwiZmlyc3ROYW1lIjoiSm9obiIsImxhc3ROYW1lIjoiQ29vcGVyIiwic3Rh
+        Z2UiOiJMZWFkIiwic291cmNlIjoiQ3VyYXl0b3IgQXBwb2ludG1lbnQiLCJz
+        b3VyY2VVcmwiOiJodHRwOlwvXC9jdXJheXRvci5jb21cL3NjaGVkdWxlIiwi
+        Y29udGFjdGVkIjoxLCJwcmljZSI6MCwiYXNzaWduZWRMZW5kZXJJZCI6bnVs
+        bCwiYXNzaWduZWRMZW5kZXJOYW1lIjpudWxsLCJhc3NpZ25lZFVzZXJJZCI6
+        NiwiYXNzaWduZWRUbyI6IkRhcmluICpGcmFuemVuIiwidGFncyI6WyJDdXJh
+        eXRvciBBcHBvaW50bWVudCJdLCJlbWFpbHMiOlt7InZhbHVlIjoiSm9obkBj
+        b29wZXJtY2xpbnRvdmsuY29tIiwidHlwZSI6ImhvbWUiLCJpc19wcmltYXJ5
+        IjoiMSIsImlzUHJpbWFyeSI6IjEifV0sInBob25lcyI6W3sidmFsdWUiOiIy
+        NTAuNjE5LjkyMDciLCJ0eXBlIjoiaG9tZSIsImlzX3ByaW1hcnkiOiIxIiwi
+        aXNQcmltYXJ5IjoiMSJ9XSwiYWRkcmVzc2VzIjpbXSwicGljdHVyZSI6bnVs
+        bH1dfQ==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:30 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=vanessa@piesync.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:31 GMT
+      Etag:
+      - W/"ed458a41dfaa53657e3aba24c0d3ea75"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgf4b4q0tfrmau62g
+      X-Runtime:
+      - '0.101444'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAGuyqVcAA2RU247iMAz9FZRnGNEbLTytNPsF+7AvaFS5qWGySpNuLmi6
+        iH9fp6HQMn1pfTu2j+1emRt6ZAfGtXLA3ZsU1rE16+GMlh2ukznKa6bwy7GD
+        8lJGH3ZI6ANNHYViu2ZOO5D1HSC5rSdoko7Xl3SEKFoSixL2wJHzag+Yl1AV
+        W3ryiuzeEvroxE9F1UDWbIq2wk2eNe0GsirZ7Ko0b6o825UnTgGgtBo67Smf
+        Mx7XDDsQkuIvoNBa+NELtIPib1x3oSPoQkG/o3H1S3cN+JECi74NUGR9/wTD
+        NcjVT0QTclzAgZnxc1dQOx01XnsjI0vUPvR9rP+Pt5/7r75ngZKuByUWFEfd
+        ME1g5nJ89XmYh4icpUmWLrhM2yxt8jTNkj0HojLJkmev7zF2FcNuH1Sk1Byc
+        0KpuqY9ZUUs9pRVuqCNMXIIwSKFQuZrrdqb1ypmlpyQg558+UqvzQtFrGzZn
+        jmPwHJLPYZzo8J9W31I9w0I7YF1t8K9HeoN7lkCiRVS16B/xBsFhO3olebkt
+        s3KX5yF1px3Wc3MMsOKsSOH7mc737QtIlaYl+dJOhQbGItmBrsNqLsJ5GH0S
+        cjH/pWVag2/+xzAur6xvLDeioaQno7t6XHIyn0BavF8NbSLNJU70Th6c5ylJ
+        nPJEywhu8dxR4KK2qHoU9fAYA7i3jkoA56gg72JXJ9/UEqGdrpAW5YJmSVKR
+        FfT7CMf4yt3udvuYfiV38pLbfwAAAP//AwDHwDIyrQQAAA==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:31 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acecc89ae47a85000048
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470735351,"synced_at":1470739050},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:31 GMT
+      Etag:
+      - W/"686764fe9ee0a94d084161237ccdee0c"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '499'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgf9no8h4u4p0glog
+      X-Runtime:
+      - '0.122651'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAGuyqVcAA2RTy46jMBD8lYhzMgIMAXJaafYL5rCX0Qo1psl4ZGyPH9Gi
+        Uf59GxyyIcsFUVXdXV0234mfDCanhGvlgftkn4iePssKGuDIed0AFhXUZUpP
+        URMfHNp2EfGhrDtg3aHsazwUrOsPwOrscKzzoqsLdqwGTgWgtJpGHVxy8jbg
+        PsERhKT6Cyh0Dn4YgW5S/IXrkeQKxtnQr0ju3vTYQZiNGYehn1sR+/oBlmuQ
+        u5+Idp5xAQ82OX2v+9wAWmeEM7bB0kAVpLyS1pjo/zO4j+aPMaSi0QYU+Xho
+        EbHpRQrnt5L3Z82dnmJnlmcs32SZ9yzvijxnWcOBosxY9m/X11i7i2XX32RS
+        ag5eaNX2tAeZmiFwvrX4FZDe4OM+N9ghqlaYFeMWwWO/qLKiSitWHYtin1gc
+        tcf2kY4FTpwVAcE8YMH0T02atMxIS+cyO+M6KKJSQjQXIFtj9SDkJsMts0b5
+        n/59XjkoFzrHreho6GD12C4XhegBpMPbzaPTVP6WSvTp4fw4kj7XOZFZmjs8
+        j1S48Rahu6m7YingwXmyAN6ToeDjVkPoWonQrzeZ/poL2m1IJVtCogv9nF16
+        vf4FAAD//wMAzu7RBHADAAA=
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:31 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=unknown_24576@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:32 GMT
+      Etag:
+      - W/"884255d8f897478a5c0782935cebd281"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '498'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgfekfnglee3qlb3g
+      X-Runtime:
+      - '0.093188'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAGyyqVcAA2RUTZPaMAz9K4zPsIPzCZw602MvvfTE7GQUR2TdTezUH9tN
+        Gf57ZUwgYbmApKcn6UnmzNw4IDswoZUD4V46aR1bswFatOxwnsLRXjOFn44d
+        lO+6iGEHTj/QVNHIt2vmtIOuuhHwy3qiJut4fipHjLIhMy9hDwIxE7xJa55v
+        sy19ck5xb4n9ChKnDKBE2OyLPN9kZSk2+6aATcpLXhfbAkQDlABKq7HXnuo5
+        43HNsAfZUb5X70r/VVWS5WXxrQ3eF6H7MBX0oamU7/Ld6peqtVdNEMGibwIZ
+        xX5K9b76AaoFo3Wo8gEOzEyhm4MG6mn0ypsu6kQCwDDECX57+7b/HAYWROkH
+        UHIhcvSN0w5mkOMz5h4eI3Oa8DRZqJk0aVJnSZLyvQASk6f8Men3mLuKaZdX
+        arLTApzUqmpojllTSz+VlW6sIk08g7BKqVC5Suhm5vXKmSWyIyLnH5hOq3bh
+        GLQNtzPnMdiG4nMaJ3v8p9WXUo+0MA5YVxn845G+wT1aINMiqkoO93yD4LC5
+        onhWbsu0LLIilO61w2oejglWtoocfpj5/NA8keySZEdYtDYMcG2SHeh9WC1k
+        eCBGn2S32P8yMp3BF/wxrMsr62srjKyp6MnovrqeOYVP0Fm8vRu6RNpL3OhN
+        PGjnJcmc6sTIldxi21Piorfoujd1R1wThLeOWgDnqCHv4lQnX1cdQjO9QzqU
+        DzRzkYpdUfKE2EYlnrUrL5fX6c/kJh6//AcAAP//AwBJsQGVrwQAAA==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:32 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acee4c1d3b1504000051
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470686712,"synced_at":1470739051},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:33 GMT
+      Etag:
+      - W/"6a88063c70768fa397c0cad95f0f441d"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '497'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgfjsp735sq7gpf8g
+      X-Runtime:
+      - '0.105020'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAG2yqVcAA2RTTa+bMBD8KxHn5AnzGXKq1GMvvfT0VKHFXqj7wHb98Vr0
+        lP/eBYeUpFwQM7O7M2vzkfjZYHJJuFYeuE+OiRT0WdbQAEcsOBN5x8q0SOkp
+        GfHBoW1XEe8LgBrh1FRleSrqmp8aUcEpZzXrqrQCLoAKQGk1Tzq45OJtwGOC
+        E8iR6oN6U/q3arOirKtPw4K+cD1RiYJpMZWzc3k+fFOdDkoQbBwGsTQj7qtU
+        b4cvoAawWi9T3sGDTS4fW6IbQIEmGLANlkaqMI5X0hoTE/wM7kfzxxhS0WAD
+        SqLbtYjY/DJK5x8lr8+aOz3HznnG8uxhm5nIs67Ispw1HGiZLGf/kn6OtYdY
+        dv1OJkfNwUutWkE5yNQCgfOtxV8B6Q0+5rnBDlG10mwYtwgexapiRZ3WeV0V
+        1TGxOGmP7Z6OBU4OioBgdlgw4qlJk5Y5adG5xRmncyEqJURzCWNrrO7l+LDD
+        R2Zb5X/61yVyUC50jlvZ0dDe6qldrwrRPYwOb3ePTlP521aiTw/DfiR9bnMi
+        szZ3OExU+OAtQndTd8VawIPzZAG8J0PBx1R96NoRQWx3mf6bd7T7JVXnqmYZ
+        dZsVf94du17/AgAA//8DADE7GLFyAwAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:33 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=craigcunha68@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:33 GMT
+      Etag:
+      - W/"004b4b42e14c640282c33da1d6ffa1e7"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '496'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgfog9v1qb0pum750
+      X-Runtime:
+      - '0.094993'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAG2yqVcAA2RU247iMAz9FZRnGNG0tIWnleZxv2CFRpVJTSerNOnmMjtd
+        xL+vQyjTMkgjxvbxsX3scGF+HJAdmDDag/AvSjrP1myADh07XKZwstdM46dn
+        Bx2UShh2yOgftE0ydts188aDau4E2XU9UZN1vDyVI0bZkrmrYA/ivMWi3IuT
+        2Fbb+ClOFA+O2G8g4Lsz1BXfFAWUm6LluIGS7ze8RKgEFMUOt5QA2uixN4Hq
+        eRtwzbAHqWJNC7ITQb9DWf/oovNFmD4OBX3s6TXGV68REBVwGNrIRJFfqJT5
+        u/oJugNrTCzyAR7sTKC7g+bpafImWJVkovlhGNIAv4N7338OA4ua9ANoudA4
+        +cZpBTPI8RnzCI+JOedZzhdi8jbnp4LzPNsLIC2zPJtNmnJXKe36Rk0qI8BL
+        o5uW5pg1tfRTWenHJtGkK4iblBq1b4RpZ96gvV0iFRH58IVRRncLx2BcPJ05
+        j8UuFp/TeNnjP6O/lfpKi+OA843FPwHpG/xXC2Q6RN3I4ZFvETy2N1RWVNsq
+        r8qijqV747GZh1OCk50mRxhmvjC0TyQ153vConNxgFuT7EDPwxkh4/uw5izV
+        Yv/LyHQG3/DHuK6gXTg5YeWJip6t6ZvblVP4DMrh/dnQJdJe0kbv4kE3L0nm
+        VCdFbuQOu54SF70l16OpB+KWIILz1AJ4Tw0Fn6Y6h1OjENrpGdKhfKCdi1TW
+        Bf0R26jFs3b19fo2/Zbcxcuu/wEAAP//AwCfEObBrgQAAA==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:33 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acf0e469cbc07000004b
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470684068,"synced_at":1470739053},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:34 GMT
+      Etag:
+      - W/"1021a158d134c75d7f48233cf5b197b9"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '495'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgfubqd8vq6ucj1v0
+      X-Runtime:
+      - '0.129956'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAG6yqVcAA2RTXY+bMBD8KxHPyYkYB0KeKt1jf8HpVKHFLJwrY7v+uCs6
+        5b93HScRSZEQYmZ2d2Yx30VYLBanQhgdQIRiW8iBXg8NtCDGEnndil6UTZku
+        3hMfPbruIgJ2GOHYsB3nUO/4wHAHNWt3rEZoBHB+wJIKQBu9zCb64hRcxG2B
+        M0iVZjqQk4j6A+rjjymBL8LMVKFhTp5eE795TQICrcc4pE7EvKFS5mvzE/QE
+        zpg05BMCuOL0fQt0BSjPDBN20dFEHZU6k9baHOB39B/tX2tJRYMtaIl+1SJj
+        y4uSPjxK3p81d3rJnSu2r9jDMtlQsZ4zVu1bAbTLfbVfJc21m1x2/kUmlREQ
+        pNHdQDnIVILAh87hn4j0hJDzXGGPqDtpb5hwCAGHi2rPm7Kpmpoft4XD2QTs
+        1nQu8HLSBES7wqIdnpq05YGTFr1PzoSJmqiSECMkqM46M0r1sMNH5rbK//Tv
+        KXLUPvZeONnT0NGZubucFKJHUB6vR4++pg7XrWSfAab1SHq9zcnMpbnHaabC
+        B28Zupu6Ky4FIvpAFiAEMhRDTjXGvlMIw+0o02/ziW69pPrI6aZuixbPu6vO
+        538AAAD//wMAm1e1SnEDAAA=
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:34 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=keith@nexthome.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:35 GMT
+      Etag:
+      - W/"3568e45104c6d082cae8106b84154384"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '494'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgg2vva10pe27nvq0
+      X-Runtime:
+      - '0.106899'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAG+yqVcAA2RUTY/iMAz9KyhnGDX9oAOnlfa4N65oVJnWLdlNk24+RtNF
+        /Pd1CIWW4QK2n5/tZ4cLc+OAbM9qrRzU7k0K69iaDdChZfvLFI72min8cmyv
+        vJQRw/acfqCpolEka+a0A1ndCfh1PVGTdby8lCNG0ZBZlLCDuk2ztGiTtOAc
+        E/rkQHFviT2CmnZbbrHeJKecb3JA2LzjNt/sWtxhXhYpLxpKAKXV2GtP9Zzx
+        uGbYg5CU/weFO/8IE5x1j2+17sNA0Id+foXY6qBPQlmtggAWfROIKHjAZnU4
+        C6UD+yc4MDNl7g4apKeRK29k1IcGh2GInf/29rz7GgYWxOgHUGIhbvSNk/Yz
+        yPEV8wiPkTlLeZYuVEybLD3laZrxXQ0kIs/4c8yfMXcV064f1KTUNTihVdXQ
+        HLOmln4qK9xYRZq4/rBCoVC5qtbNzOuVM0ukJCLnnxipVbdwDNqGm5nzGOxC
+        8TmNEz3+0+pbqWdaGAesqwz+9Ujf4J4tkGkRVSWGR75BcNjcUDwvkzIrt+GA
+        DfbaYTUPxwQrOkUOP8x8fmheSN5JesKitWGAW5NsT7RW1yI8DKNbIRf7X0am
+        M/iGP4Z1eWX9ydZGnKhoa3Rf3c6bwi1Ii/f3QpdIe4kbvYsH3bwkmVOdGLmR
+        W+x6Slz0Fl2Pph6IW0LtraMWwDlqyLs4VetPlURopvdHh/KJZi7S9j3LipLY
+        RlW/apdcrx/Tn8hdPH79DwAA//8DALdBH9KnBAAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:35 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acf2325f02511e00004a
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470683357,"synced_at":1470739054},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:35 GMT
+      Etag:
+      - W/"714155f8cc2f09458e9b4d704a086d86"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '493'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgg8d5b9nikv2vj50
+      X-Runtime:
+      - '0.096270'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAG+yqVcAA2RTy46jMBD8lYhzMgLzGnJaaY9zy3W0Qo3dJN4F2+PHaNAo
+        /75NHLKQ5YJcVV1d3ZjvxE8Gk2PCtfLAfbJPpKBjWUMDvGc5K/uUlVmGKT0F
+        EB8c2jaKRF/VFfJD2hXZoQCEwytWxaHpscGiLllWCioApdU06uCSo7cB9wmO
+        IAeq/4PSX34o/PIXPeIL1yOpFYxznreZ2510J5XTinDjMIjZiMgTit3pIpWe
+        3T/Bg02O38skd4AGGeGMbbDUSoVhuJLWmJj8d3CX5ssYUlFXA0qiW1lEbHoZ
+        pPNbyfuz5kFP0TlnWc42W2QiZ13BWJ41HGiJWZ79G/NnrN3FsusvCjloDl5q
+        1Qqag0LNEDjfWvwISG/wcZ477BBVK82CcYvgUdxUWVGndV5XZbpPLI7aY7um
+        Y4GTZ0VAMCssGPFk0qRlSVp0bk7GdVBEka3TXMLQGqt7OWx2uGWWVf6nf59H
+        DsqFznErO2raWz22tytCdA+Dw/udo6+p/H0rMaeH87olHZc+kbmZOzyPVLjJ
+        FqFHqIfiVsCD8xQBvKdAwcep+tC1A4JY7jD9L59o10uqXvO8rMltUvx5d8X1
+        +hcAAP//AwBDM7g8agMAAA==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:35 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=unknown_24573@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:36 GMT
+      Etag:
+      - W/"0ac3cacd547404892964804618ce9ac3"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '492'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrggd1efmqah8qitkg
+      X-Runtime:
+      - '0.086401'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '585'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHCyqVcAA2RUTY/aMBD9K8hnWCVOIMCpatVLpZ56RKto4jjBrWOn/tjd
+        FPHfO44JJCwXmK/3Zt6MuRA39JwcCdPKAXMvUlhH1qSHlltyvEzhaK+J4h+O
+        HJWXMuaQY4o/uCmjsU3WxGkHsrwBpNf1BI3W6fJEh4iiRnNbwAFYkx9oUuzr
+        KqurBD85YNxbRB+TmgYaCtVus6dsu8kPsN/skzzd5LtdwrIiL4BXWABKq6HT
+        Hvmc8XxNeAdCYr1Xf5R+VyXNt0X2pQ3eF6a7MBV0oakf+qxWP2H1vX4HU4dx
+        e8t9HeAw+lV6vvrllT0LxQPPGzgwM41uDhypw+FLb2RUCiWAvo8z/Pb2fPjo
+        exJk6XpQYiFz9A3TFmYpp+ece3iIyBlNM7rQk9YZrXJKs/TAAOVMs/Qx67dY
+        u4pl11dsUmoGTmhV1jjHrKmlH2mFG8oIEw8hLBM1Ua5kup55vXJmmSkRyPlH
+        jtSqXTh6bcP1zHEMbwP5HMaJjv/T6hPVoyyMA9aVhv/1HL/BPVpA03KuStHf
+        6w0Hx+sxK82LpMiK3ZYG6k47Xs7DscCKVqHD9zOf7+snkD3NEMRya8MAY5Pk
+        iC/EaibCEzG6EXKx/2VkOoNP+aewLrxEX1lmRIWkjdFdOR46hhuQlt9eDl4i
+        7iVu9CYetHNKNCeeGBnBLW87LFz0Fl33pu4ZYwHz1mEL4Bw25F2cqvFVKTnU
+        00vEQ3njZi7SriiSNIg0KPasXXq9vk5/Jzfx0ut/AAAA//8DAAfC+LyxBAAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:36 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acf492078db3db00004a
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470677012,"synced_at":1470739055},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:37 GMT
+      Etag:
+      - W/"c24727c3272cf90c019a95ba173e38e3"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '491'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrggi88i19sftdjjv0
+      X-Runtime:
+      - '0.095525'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHGyqVcAA2RTTY+bMBD9KxHnZAXmK+RUbdVLpZ56XFVosAfiLtiuP3aL
+        VvnvHeIkDVkuiPfezLw3Nh+Jnw0mh4Rr5YH7ZJtIQZ9lDQ3wvmhYWu9Fl4su
+        pacA4oND255FfQ89g67a7Rkvd0UD+90+LbJdUVUpz+uiBuyoAJRW86SDSw7e
+        BtwmOIEcqT6oV6XfVcuKss6/DAv6xPVEJQqmxdR3fVSbH7D5Jt7BCkeEcRjE
+        0o7Y5zHg5mdQ7igVLnPewINNDh/XTBeAIk0wYBssDVVhHE+kNSZm+B3csflr
+        DKlotAEl0d21iNj8NErn15KXR82NnmPnnGU5W+2TiZx1BWN51nCgdWZ59j/r
+        11i7iWWnX2Ry1By81KoVlINMLRA431r8E5De4GOeC+wQVSvNFeMWwaM4q7Ki
+        Tuu8rkq2TSxO2mN7T8cCJwdFQDB3WDDioUmTlhVp0bnFGddBEZUSormEsTVW
+        93Jc7XDNXFf5Sf+yRKbTDJ3jVnY0tLd6as+XhegeRoeX20enqfxlK9Gnh+F+
+        JH1e50Tm3NzhMFHhyluEbqZuinMBD86TBfCeDAUfU/Wha0cEcb3N9Oe8ob1f
+        UlXXaUabdrPij7srT6d/AAAA//8DAFy0RXR0AwAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:37 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=unknown_24572@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:37 GMT
+      Etag:
+      - W/"0f833d5a0d43cc2360df71763b0ef09e"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '490'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrggmmsve419l7htag
+      X-Runtime:
+      - '0.131333'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHGyqVcAA2RUTY+bMBD9Kyufk1UwhI+cKvVa9dRbtLIGY6hbY1Nsb5dG
+        +e8d45BAFkWC+Xrz5o2dC3HTIMiJcKMdcPeqpHVkRwbohCWnyxKO9o5o8eHI
+        SXulYg45JfghRhaN42FHnHGg2A0gue4WaLTOl6d2iCgbNI8FVMDb/AiUl2WZ
+        0uKAT55h3FtEn5Oytm7zA1R72pT5Pkuyel/WabXPgYu8qhoOSYMFoI2eeuOx
+        nxu92BHRg1RY7/Vvbf5qRrNjQb90wfvKTR+mgj6Q+m5e5i+cyArfBBj0fpO9
+        ePkhdCAL7+BgXOlyc+AYPQ7M/KiiOjg2DEPk/cvbn9XHMJAgRT+Alhtpo29a
+        lF+lnJ9z7uEpIqc0SelGQ9qktM4oTZOKA0qYpMljvq+x9iWWXd+QpDIcnDSa
+        NTjHitTWj22lm1iEicsPC5QaVWHcNCuv127cZioEcv6Ro4zuNo7B2HBi1jij
+        6ELzNYzDNfwz+lOrR1kYB6xjo/jjBb7BPSigaYXQTA73+lGAE82clWTFoUiL
+        /JiF1r1xgq3DscDKTqPDDyufH5onkJKmKeYKa8MAM0lywlthDZfhWoymlWqz
+        /21kOQaf8s9hXV5bX1s+yhqbtqPp2Xy4MdyCsuJ2W/Ak4l7iRm/iQbduiebS
+        J0ZmcCu6Hgs33KLrTuqeMRdwbx1SAOeQkHdxqtbXTAloltuHB+VdjGuRcvwl
+        QaRJ82ft6PX6tvyF3MRLrv8BAAD//wMA+0bEHaUEAAA=
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:37 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acf65a2c888327000064
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470670613,"synced_at":1470739057},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:38 GMT
+      Etag:
+      - W/"ef8bf49fc60ebd98e2a023e13786f0e5"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '489'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrggtbt1hdtta5apsg
+      X-Runtime:
+      - '0.083572'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHKyqVcAA2RTTa+bMBD8KxHn5AnMd06Veq166u2pQotZqFuwXX+8Fj3l
+        v3fBIYU8FIl4dmZ3duK8R27WGF0jrqQD7qJzJDo65iXUwPsiB8arqkpZGdNT
+        ZFT3Fk2zkrK+7YsY6gvrquKSJVl7qdq0vhTAsajrjkPSkQCkkvOkvI2uzng8
+        RziBGEnv5S+p/siGZXnJPg0L+sLVRBIJ02Lqqzqt386Rtui7pQ2hX8SEp28o
+        F7PwBg5MdH3f9rgDtMYEAzbe0CDpx/FGXK2D75/e/qj/ak0sGqdBCrS7FgGb
+        X0Zh3ZHy+sx5lOfQOWVJyg4Zsi5lbcZYmtQcKMIkTf7v9zloT0F2+04mR8XB
+        CSWbjvYgUwsE1jUGf3ukN7iwzx22iLIResO4QXDYrawkK+MyLYs8O0cGJ+Ww
+        2ZeDwIpBEuD1DvO6e2pSx3lFXLR2ccaVp+yvMSGKCxgbbVQvxkOGx8oW5Qf+
+        67Kyl9a3lhvR0tDeqKlZLwiVexgt3m8c/ZrS3VMJPh0M+5F03OaEytrc4jCR
+        8OAtQA9TD8Yq4N46sgDOkSHvwla9b5sRodtuMP1b3tDsQyrok6TUbZb8Obvy
+        dvsHAAD//wMA8qLTM2gDAAA=
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:38 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=rickdennis@eaglehm.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:39 GMT
+      Etag:
+      - W/"c0b552077550b9183ea0592fccf14904"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '488'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgh22oikjui3fts20
+      X-Runtime:
+      - '0.094244'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '573'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHOyqVcAA2RU25KbMAz9lR0/JzvBBEjy1E5fO/2BnR1GGMG6NTb1ZWfT
+        nfx7ZRwSyPICko6OpCObT+bPI7ITE0Z7EP5ZSefZho3Qo2Onzzmc7A3T+OHZ
+        SQelEoadMvpAWyej2G2YNx5UfSXILpuZmqyXz4dyxChbMosKjiC6A+7Lo2ia
+        4sB39BRA8eCIfQIhQMELLLcH0ZXbfVt22yPnhy3fCWhEVuaCV5QA2ujzYALV
+        8zbghuEAUlG+leJPi1pL9w2hV/g2PAszxKFgiD39Mk/TFw3kMLSRhbw/pQLx
+        9F2LN2Mj+zt4sAtlrg4aZKCR62BV0ocGh3FMnf8O7u34MY4sijGMoOVK3OQ7
+        z9ovIC+PmFv4nJhznuV8pSJvc97sOc+zowASMcuz+4g/Uu5TSru8UpPKCPDS
+        6LqlORZNrf1UVvpznWjS+uMKpUbta2HahTdob9dIRUQ+3DHK6H7lGI2LZ2bJ
+        Y7GPxZc0Xg74z+gvpe5pcRxwvrb4NyC9wd9bINMh6lqOt3yL4LGdUNm+2lV5
+        VRZlLD0Yj/UynBKc7DU5wrjwhbF9IDnwvCAsOhcHmJpkJ7oXzggZL4Y1nVSr
+        /a8j8zH4gn+J6wrahcYJKxsq2lkz1NPxpnAHyuH1vtBJpL2kjV7Fg35Zksy5
+        TopM5A77gRJXvSXXrakbYkoQwXlqAbynhoJPU3WhqRVCO98/OijvaJcilfm+
+        4hWxnbV41C6/XF7nn8hVvOzyHwAA//8DAElm2c6nBAAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:39 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acf8e469cbb58200005a
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470634727,"synced_at":1470739058},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:39 GMT
+      Etag:
+      - W/"bf38a06e87b19de44f09a8fc014c7220"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '487'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgh7acmt8t1hg3rdg
+      X-Runtime:
+      - '0.093184'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHOyqVcAA2RT246bMBD9lcjPySqYcMtTq76u+gOrCg1mSLw1tteXVaNV
+        /r0DDmlIeQHOnHPmzGC+WLhYZEcmjA4gAtsy2dNrUUEDYqjxUDai64qa7+kq
+        gOrRo2tnEgIUvMByV4uh3B36ctg1nNc7vhfQiazMBa9IANroy2iiZ8fgIm4Z
+        jiAV6Z0Uv3vUWvpvCCeF5/FFmJEUGsYp00+zmZ+2zHqM/eRC6KtUIDbftTgb
+        N7l/QgDHjl/LJDeABhnhhG101EpHpa7EtTYlf4/+3PyxlljU0YKW6B8sEnZ5
+        UdKHNeXtmXMvX5JzzrOcr7bI+5x3B87zrBFAS8zy7N+IP5J2k2TXXxRSGQFB
+        Gt32NAeFmiDwoXX4EZHuENI8N9gj6lbaBRMOIWA/s7JDta/yqizKLXM4moDt
+        YzkJvDxpAqJ9wKLtn0yafdEQF72fkgkTNZX2hBghQbXWmUGq1Q7XlWWV//Hf
+        ppGj9rHzwsmOmg7OjO18RKg8gPJ4O3P0NXW4bSXlDHB6bEmvS59Umc09nkYS
+        rrIl6B7qzpgFIvpAESAEChRDmmqIXasQ+uUM0//yie5xSWV+qHhFbhctnndX
+        X69/AQAA//8DAHiQ+ylqAwAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:39 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=submitabcd@yahoo.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:40 GMT
+      Etag:
+      - W/"f2d7960d541ca905fc412c4f43eb4745"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '486'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrghbjum952korqidg
+      X-Runtime:
+      - '0.080523'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHSyqVcAA2RU247iMAz9FZRnGPVCKfC0lx9YaR/RqHITA1mlSTeX0XQR
+        /74OodAyvIDt42P72OHC/NAj2zNutAfu35R0ni1ZDyd0bH8Zw8leMo2fnu11
+        UCph2D6nH2ibZFTZknnjQTV3gvy6HKnJOlxeyhGjFGRWNeyAHwHXmx1vW1EU
+        GX1KoHhwxH4D1YJCGWSrKltXq3WZt6v2uKlXbVVVYlfX2booKAG00UNnAtXz
+        NuCSYQdSUb4LbSc9tFx8G+BszBs3XRwJutjRdwHd4jcBznF8h0FEGgr8CrZX
+        uPiBYCP7B3j68VTm7qBBOhq5CVYlfWhw6PvU+Z/gzrvPvmdRjK4HLWfiJt8w
+        aj+BHF4xj/CQmMsiL4uZioUoi5aUKPMdBxIxL/PnkD9T7iKlXd+pSWU4eGl0
+        I2iOSVNzP5WVfmgSTVp/XKHUqH3DjZh4g/Z2jlRE5MMTo4w+zRy9cfFmpjwW
+        T7H4lMbLDv8Z/aXUMy2OA843Fv8GpG/wzxbIdIi6kf0j3yJ4FDdUvq6zuqw3
+        1TaW7ozHZhpOCU6eNDlCP/GFXryQbItyQ1h0Lg5wa5Lt6V04w2V8GNYcpZrt
+        fx4Zz+AL/hDXFTSdseNWtlT0aE3X3M6bwkdQDu/vhS6R9pI2ehcPTtOSZI51
+        UuRG7vDUUeKst+R6NPVA3BJ4cJ5aAO+poeDTVMfQNgpBjO+PDuUD7VSkarvZ
+        bqIkg+av2lXX6/v4J3IXL7/+BwAA//8DAGa4cjWnBAAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:40 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acfae469cbbd2200003a
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470586860,"synced_at":1470739059},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:40 GMT
+      Etag:
+      - W/"6a23a846a5f1f37deaa46dcfad611010"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '485'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrghgrp4quv0v361u0
+      X-Runtime:
+      - '0.125666'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHSyqVcAA2RT246bMBD9lYjnZMWdkKd2+wOV+riq0GAPiVfG9vqyKlrl
+        3zvgkJKUF+CcMzNnDuYr8ZPB5JQwrTwwn+wTwem1aqAFNgCWdcv6nud5SlcB
+        xAeHtltEDScqhfRQpWV1KIusP/RD3Rz6qqp42zRpmedUAEqradTBJSdvA+4T
+        HEFIqnehH4WHnvFvE1y0fmF6JL2CcXb0ncO4+0WCC2HGYeBzGyJ+Bmsk7l4R
+        7Nz9Ezw9nL7WTW4ALTLCGbtgaZQKUl5Ja0x0/h7cpf1jDKlopgEl0G1aRGx6
+        kcL5R8nbs+ZOT7FzkWdF/pBizou8pySKrGVAIWZF9m/JH7F2F8uuv8mk1Ay8
+        0KrjtAeZmiFwvrP4EZDu4OM+N9ghqk6YFWMWwSNfVFnZpE3R1NVxn1gctcdu
+        S8cCJ86KgGA2WDD8qUmb1ilp0bnZGdNBETUjmgmQnbF6EPIhw0dmjfI//du8
+        clB0FByzoqehg9VjtxwRogeQDm9njr6m8rdUok8P5+1Iel3nRGZp7vA8UuGD
+        twjdTd0VSwELzpMF8J4MBR+3GkLfSQS+nmH6Xz7RbkOqjvVxCWlS7Cm7qr1e
+        /wIAAP//AwAP81S0agMAAA==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:41 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=randabradley11@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:41 GMT
+      Etag:
+      - W/"f07e59170a71cd7afffafcff73a355e4"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '484'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrghleobseeh7366hg
+      X-Runtime:
+      - '0.102010'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHWyqVcAA+xWS2/bMAz+K4HPcRG/7ZyG7dCddw0KQ5ZoT4MteXoU9Qr/
+        91FRnNgp0MOGXYbmkvD1kfxIEXkNzDRCcAyoFIZQ89BzbYJ9MJIOdHB8Xcxe
+        3gcCXkxwFLbvvU9wjPAHqNoL2WEfGGlIX18Aonm/QKN0er1Lh4icoZgVpCIs
+        KmlZEUgLGh/cJ0vRbjWin53KpICKllmYsCQJ0yItwiqjVZjSJMuqNqrSLMMA
+        IqSYBmkxn1EW9gEMhPcYr4hgpFGE9TBF0afOqR+oHFxbZHBVfXMeu69EYUeO
+        BA2WOTBnArb7bB0F5JkYolbcXBTYyoBN11b1niFsnYyjr/2H1d+rl3EMHB3D
+        SATf0Ot108L+yuV073M1Tx45iaMk3vAYsyRu0jhOoooSpDFKoluLX3zszofN
+        T1hkLykxXIqaYR+rorZ6TMvNVHsYvwBuiFyAMDWVbKW1wqitZ49Axt58eim6
+        jWKU2m3NGkdB55KvYQwf4JcUb1Ldwlw7RJtawU8L+E3MrQQUNYCo+XiNV0AM
+        sLNXlBaHIinysnSpB2mgXpt9gOadQIUdVzo7sjuQMk4K9AWtXQPnIoMjvgwt
+        KXdPQ8mW95v5by3LGrzxP7lxWaFto6niDSZtlRzq84KjuSW9hsuLwU3EufiJ
+        Xsgj3ToliksebzmDa+gGDNzU5lXXoq4e5wBqtcESiDFYkDW+q9Y2dQ+ELS8Q
+        F+UZ1JqkLC3jGJnWk6D33OXzvH/3UNCWbg9FWm0PBRwAijwPW0azMM1ZGZYl
+        RGHbFEXWxOUhbtg/OxSPCnds92i5vwkf1+K/vhb54a+vhQf5uBZ/ci2KPKvm
+        +Wn503EhL55/AwAA//8DAGFCgn3XCAAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:41 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9ad18c89ae47c20000054
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470548228,"synced_at":1470739061},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:42 GMT
+      Etag:
+      - W/"aa4a5dc089be7690c7aabfb0c30e066d"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '483'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrghqus9auc66sdvvg
+      X-Runtime:
+      - '0.094454'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHayqVcAA2RTTY+bMBD9KxHnZBVsWCCnqr303OuqQoM9ZF2B7fpjVbTK
+        f++AQwopF+T33sy8eZjPLEwWs0smjA4gQnbMlKRjWUEDMq9F3QAWlWDn+SkL
+        4qNH1y6imlfYiLo8ccn5qaiK6tSUojkVgpdl0+dNUZZUANroaTTRZ5fgIh4z
+        HEENVO9AS+gcyAGnPP9yneEXYUaq0TDOrn7MisN3cBYdodZjlHOzmUJ5+Eo9
+        qf8HBHDZ5XPd5Q7QKiNcsY2Ohuk4DDfSWpu8/4r+vfljLaloogWt0G9aJGx6
+        GZQPe8nbs+ZBT6kzZzlnuxyZ5KwrGON5I4BizHn+b8VvqfaQym4/yeRgBARl
+        dCtpDzI1Q+BD6/B3RHpDSPvcYY+oW2VXTDiEgHJR5UV1rnj1WtfHzOFoArZb
+        OhV4ddUERLvBopVPTZrzKyMtej87EyZqos6EGKFgaK0zvRp2Ge6ZNcr/9G/z
+        ylH72HnhVEdDe2fGdrkkRPcweLzfOvqaOtxTST4DXLcj6bjOSczS3ON1pMKd
+        twQ9TD0US4GIPpAFCIEMxZC26mPXDghyvcX0x3yg24ZUFjVjlLSftHjOLr/d
+        /gIAAP//AwB4I5iPbAMAAA==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:42 GMT
+- request:
+    method: get
+    uri: https://api.intercom.io/contacts?email=john@coopermclintovk.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:42 GMT
+      Etag:
+      - W/"1f43f3fd6f478673b0104f0d5adde140"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '482'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrghvgs0s25mkva3rg
+      X-Runtime:
+      - '0.102948'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHayqVcAA2RUTY/iMAz9KyhnGNEvSjmtNLe972GFRpWbGiYzadLNBzss
+        4r+v01BoGS5g+/nZfna4MHfuke0Y18oBdy9SWMeWrIcjWra7jOFoL5nCL8d2
+        yksZMWyX0A80dTSK9ZI57UDWN4LkuhypydpfnsoRo2jJLEqogB8w50mbNQmU
+        sKZPUVHcW2IfQFVWFes0S1eQbctVvl0XK8ibfJUix02JmG/LLSWA0urcaU/1
+        nPG4ZNiBkJT/od/VD641tdtxKZTTp88XrrswFnShq5+EWLwOiKCBRd8GLor8
+        Rin138WvrjH0C0KZEzgwE4luDpqoo9lrb2QUihSAvo8jfHj7Xn31PQuqdD0o
+        MVM5+s7jEiaQ/TPmHj5H5ixNsnQmZ9pmaZOnaZZUPMiZZMlj0teYu4hp1zdq
+        UmoOTmhVtzTHpKm5n8oKd64jTbyDsEuhULma63bi9cqZOVISkfMPjNTqOHP0
+        2objmfIYPIbiUxonOvyn1bdSj7QwDlhXG/zjkb7BPVog0yKqWvT3fIPgsB1Q
+        SV6uy6zcbNJQutMO62k4JlhxVOTw/cTn+/aJZJtmFWHR2jDA0CTb0QOxmovw
+        Qow+CDnb/zwynsE3/D6syyvrG8uNaKjoweiuHu6cwgeQFm8Phy6R9hI3ehMP
+        jtOSZI51YmQgt3jsKHHWW3Tdm7ojhgTuraMWwDlqyLs41cE3tURox4dIh3JC
+        MxWpyNOqKIjtrPizduX1+jb+m9zES67/AQAA//8DAI+48M2wBAAA
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:42 GMT
+- request:
+    method: put
+    uri: https://api.intercom.io/contacts/57a9acfe4c1d3b1a7a000059
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"fub_lead":true,"converted_at":1470542955,"synced_at":1470739062},"companies":[{"company_id":"32132","name":"Company
+        32132","custom_attributes":{"phone":"971-321-3242"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/3.5.2
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+      Authorization:
+      - Basic anVzaDl4cHA6YjQ2MmNhZmU2MzRhNGE0NTBkYWY1OWJhMDM4ODgzNzI5MjYwZjY4MA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Aug 2016 10:37:43 GMT
+      Etag:
+      - W/"705f917c8b678d118b8c7528ff39f210"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31557600; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - d9ba7db915ab8e787c6dc3bdc9a50c1a56cf9b04
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '481'
+      X-Ratelimit-Reset:
+      - '1470739080'
+      X-Request-Id:
+      - amdrgi4q84hj80rp6910
+      X-Runtime:
+      - '0.094300'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        H4sIAHeyqVcAA2RTS4+bMBD+KxHnZAU2hJBTpb313kO1qtBghqy3xnb9SBut
+        8t874JCGlAvwPWa+GcxnFi4Ws2MmjA4gQrbNZE+vVQ0NiAFLUfS8K6CGnK6q
+        IT56dO0sanhT5YyzHfBDvSsPebWDsit3DAXua8TyUB/IANroy2iiz47BRdxm
+        OIJU5P8w7/qLMMaiG4WSOpjzzxdhRvJoGKdUX0mxeZ0VBFqPsZ9qEfMdlTK/
+        N9/GztETTG3OEMBlx89lpBtAE41wwjY66qmjUlfSWptG+Ij+vfljLamosQUt
+        0T+USNjlRUkf1pK3Z82dvqTKnBWcrdbJes66kjFeNGJaZ8GLf5O+Ju8m2a4/
+        KKQyAoI0uu1pDgo1QeBD6/BXRLpDSPPcYI+oW2kXTDiEgP2sKso6r3m937Nt
+        5nA0AdtHOhm8PGkCon3Aou2fijT5npMWvZ+SCRM1UTkhRkhQrXVmkGq1wzWz
+        rPI//ds0ctQ+dl442VHTwZmxnc8K0QMoj7fDR19Th9tWUs4Ap8eW9Lr0Scxc
+        3ONpJOMqW4Luoe6K2SCiDxQBQqBAMaSphti1CqFfDjP9OGd0j0uqStZUFVW7
+        aPG8O3a9/gUAAP//AwD6zvTtcwMAAA==
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 10:37:43 GMT
+recorded_with: VCR 3.0.3

@@ -48,6 +48,6 @@ class FubClientsWorker
     self.last_app_task =
       self.fub_user.app_tasks.latest_success(:fub_clients).first
     self.current_task = AppTask.running :fub_clients
-    UserAppTask.create app_task: self.current_task, user: self.fub_user
+    self.fub_user.user_app_tasks.create app_task: self.current_task
   end
 end
