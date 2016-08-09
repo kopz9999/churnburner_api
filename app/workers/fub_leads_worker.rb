@@ -1,0 +1,47 @@
+class FubLeadsWorker
+  include IntercomWorker
+  include FubClientScope
+  include Sidekiq::Worker
+
+  sidekiq_options queue: 'fub_leads'
+
+  def perform(user_id, app_task_id, page, page_size)
+    self.fub_user = Fub::User.find_by(id: user_id)
+    Thread.current[:fub_api_key] = self.user.fub_client_datum.api_key
+    persons = FubClient::Person.where(stage: FubClientsWorker::FubStages::Lead)
+                .by_page page, page_size
+    unless app_task_id.nil?
+      persons = persons.where(createdAfter: last_app_task.fub_ran_at)
+    end
+    # Sync leads
+    Rails.logger.info "#{user_company_slug}: Processing page #{page}"
+    persons.each do |person|
+      next unless person.source.downcase.include? 'curaytor'
+      fub_person = Fub::Person.retrieve_fub_lead person
+      fub_person.set_default_company self.fub_user.validated_default_company
+      sync_intercom_lead fub_person
+    end
+    Rails.logger.info "#{user_company_slug}: Page #{page} processed"
+  end
+
+  # @param [Fub::Person] fub_person
+  def sync_intercom_lead(fub_person)
+    begin
+      intercom_contact = intercom_client.contacts.find(email: fub_person.email)
+    rescue Intercom::ResourceNotFound
+      intercom_contact = nil
+    end
+    if intercom_contact.nil?
+      intercom_contact =
+        intercom_client.contacts.create(email: fub_person.email,
+                                        name: fub_person.name)
+    end
+    if fub_person.intercom_id.nil?
+      fub_person.intercom_id = intercom_contact.id
+      fub_person.save
+    end
+    fub_person.setup_intercom_contact intercom_contact
+    intercom.users.save(intercom_contact)
+    fub_person.mark_synced
+  end
+end

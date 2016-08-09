@@ -28,9 +28,11 @@ gem 'slack-ruby-client'
 gem 'pg'
 # gem 'faraday', '0.8.11'
 gem 'her',
-    git: 'https://github.com/kopz9999/her.git',
+    github: 'kopz9999/her',
     branch: 'feature/activemodel-5.0.x'
-gem 'fub_client', '0.1.1'
+gem 'fub_client',
+    github: 'kopz9999/fub_client',
+    branch: 'v0.1.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

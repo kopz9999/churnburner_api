@@ -36,5 +36,21 @@ class User < ApplicationRecord
   has_many :segments, through: :segment_users
   has_many :user_companies
   has_many :companies, through: :user_companies
+  has_one :default_user_companies, :default, class_name: 'UserCompany'
+  has_one :default_company, through: :default_user_companies
   has_many :sync_events
+
+  def reset_default_company
+    self.user_companies.where(default: true).update_all(default: false)
+  end
+
+  # @param [Company] company
+  def set_default_company(company)
+    reset_default_company
+    self.user_companies.create(default: true, company: company)
+  end
+
+  def validated_default_company
+    self.default_company || self.companies.first
+  end
 end

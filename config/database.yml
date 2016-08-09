@@ -29,9 +29,5 @@ test:
   password: 'kopz'
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: churnburner_api
-  pool: 5
-  username: churnburner_api
-  password: 'db06fafdd3636cfe70ae65b43123fe3501190b6f'
+  url:  <%= ENV["DATABASE_URL"] %>
+  pool: <%= ENV["DB_POOL"] || 5 %>

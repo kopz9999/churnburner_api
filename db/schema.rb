@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160803182344) do
+ActiveRecord::Schema.define(version: 20160808194410) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,23 @@ ActiveRecord::Schema.define(version: 20160803182344) do
     t.string   "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "fub_client_data", force: :cascade do |t|
+    t.string   "api_key"
+    t.integer  "user_id"
+    t.boolean  "active",     default: true
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  create_table "fub_lead_data", force: :cascade do |t|
+    t.datetime "converted_at"
+    t.datetime "synced_at"
+    t.integer  "sync_status_identity"
+    t.integer  "user_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "intercom_job_sync_events", force: :cascade do |t|
@@ -79,20 +96,30 @@ ActiveRecord::Schema.define(version: 20160803182344) do
     t.datetime "updated_at",                           null: false
   end
 
+  create_table "user_app_tasks", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "app_task_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "user_companies", force: :cascade do |t|
     t.integer  "company_id"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "default",    default: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "intercom_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.string   "name"
     t.integer  "fub_id"
+    t.boolean  "fub_client",  default: false
+    t.boolean  "fub_lead",    default: false
   end
 
 end

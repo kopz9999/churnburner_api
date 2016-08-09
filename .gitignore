@@ -31,3 +31,6 @@
 
 # Environment Configuration
 .env
+
+# Data files
+/data

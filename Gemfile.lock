@@ -1,5 +1,15 @@
 GIT
-  remote: https://github.com/kopz9999/her.git
+  remote: git://github.com/kopz9999/fub_client.git
+  revision: 8770813b7bb64230b824fe4802aaf121cafbc446
+  branch: v0.1.2
+  specs:
+    fub_client (0.1.2.pre)
+      facets (>= 3.0.0)
+      faraday (>= 0.8, <= 0.9.2)
+      her (~> 0.8.1)
+
+GIT
+  remote: git://github.com/kopz9999/her.git
   revision: f7dd56bcb2f228aea843903c7e851b76603c8763
   branch: feature/activemodel-5.0.x
   specs:
@@ -81,10 +91,6 @@ GEM
     figleaf (0.2.0)
       activesupport (>= 4)
       hashie (>= 2)
-    fub_client (0.1.1)
-      facets (>= 3.0.0)
-      faraday (>= 0.8, <= 0.9.2)
-      her (~> 0.8.1)
     gli (2.14.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -224,7 +230,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   figleaf
-  fub_client (= 0.1.1)
+  fub_client!
   her!
   intercom (~> 3.5.1)
   listen (~> 3.0.5)

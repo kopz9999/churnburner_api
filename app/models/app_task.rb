@@ -19,4 +19,8 @@ class AppTask < ApplicationRecord
     self.status_identity = SUCCESS
     self.save
   end
+
+  def fub_ran_at
+    self.ran_at.utc.iso8601.to_s
+  end
 end

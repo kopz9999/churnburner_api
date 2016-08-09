@@ -23,7 +23,7 @@ module ChurnburnerApi
       if app_task.nil? || all
         total = FubClient::Event.total
       else
-        ran_at = app_task.runned_at.utc.iso8601.to_s
+        ran_at = app_task.ran_at.utc.iso8601.to_s
         events = FubClient::Event.where(createdAfter: ran_at).by_page(1, 1)
         total = events.metadata[:total]
       end
