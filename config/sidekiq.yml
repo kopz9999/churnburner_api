@@ -8,6 +8,6 @@
   - intercom_batch
   - default
 :limits:
-  fub_clients: 3
-  fub_leads: 3
+  fub_clients: 5
+  fub_leads: 10
   intercom_batch: 3
