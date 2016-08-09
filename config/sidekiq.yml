@@ -3,7 +3,11 @@
 :concurrency: 5
 :timeout: 8
 :queues:
+  - fub_clients
+  - fub_leads
   - intercom_batch
   - default
 :limits:
+  fub_clients: 3
+  fub_leads: 3
   intercom_batch: 3

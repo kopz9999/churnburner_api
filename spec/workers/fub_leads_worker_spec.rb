@@ -43,7 +43,7 @@ RSpec.describe FubLeadsWorker, :vcr do
     context 'with app task' do
       let(:last_task) do
         AppTask.create(name: 'fub_clients',
-                       ran_at: Time.now.advance(:months => -1),
+                       ran_at: Time.parse('2016-07-09T10:54:21Z'),
                        status_identity: AppTask::SUCCESS)
       end
 

@@ -7,7 +7,7 @@ class FubClientsWorker
   include IntercomWorker
   include FubClientScope
   include Sidekiq::Worker
-  sidekiq_options queue: 'fub_clients'
+  sidekiq_options queue: 'fub_clients', retry: 5
 
   # @return [AppTask]
   attr_accessor :current_task
