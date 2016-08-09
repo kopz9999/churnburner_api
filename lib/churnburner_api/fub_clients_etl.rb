@@ -7,7 +7,7 @@ module ChurnburnerApi
       File.open(path, "r") do |f|
         f.each_line do |line|
           parts = line.split(',')
-          email = parts[0]
+          email = parts[0].downcase
           name = parts[1]
           api_key = parts[2]
           fub_user = Fub::User.find_by email: email
