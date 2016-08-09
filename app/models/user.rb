@@ -49,8 +49,12 @@ class User < ApplicationRecord
   # @param [Company] company
   def set_default_company(company)
     reset_default_company
-    self.user_companies.create(default: true, company: company)
-    self.default_company = company
+    user_company = self.user_companies.find_by(company_id: company.id)
+    if user_company.nil?
+      self.user_companies.create(default: true, company: company)
+    else
+      user_company.update(default: true)
+    end
   end
 
   def validated_default_company

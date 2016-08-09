@@ -35,6 +35,14 @@ class Company < ApplicationRecord
       company.save
       company
     end
+
+    # @param [Intercom::Company] intercom_comp
+    # @return [Company]
+    def retrieve_intercom_company(intercom_comp)
+      company = Company.find_by name: intercom_comp.name
+      company = Company.intercom_company(intercom_comp) if company.nil?
+      company
+    end
   end
 
   extend Factory
