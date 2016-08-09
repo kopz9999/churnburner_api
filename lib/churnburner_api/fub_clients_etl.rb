@@ -24,7 +24,7 @@ module ChurnburnerApi
                               .create(email: fub_user.email,
                                       name: fub_user.name)
           end
-          fub_user.api_key = api_key
+          fub_user.api_key = api_key.gsub(/(\n|\r)/, '')
           fub_user.active = true
           fub_user.intercom_id = intercom_user.id
           fub_user.save
