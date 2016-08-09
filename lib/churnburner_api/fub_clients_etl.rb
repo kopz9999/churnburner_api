@@ -13,7 +13,6 @@ module ChurnburnerApi
           fub_user = Fub::User.find_by email: email
           if fub_user.nil?
             fub_user = Fub::User.create(email: email, name: name)
-            fub_user.api_key = api_key
           end
           begin
             intercom_user = intercom_client.users.find(email: fub_user.email)
@@ -25,9 +24,11 @@ module ChurnburnerApi
                               .create(email: fub_user.email,
                                       name: fub_user.name)
           end
+          fub_user.api_key = api_key
           fub_user.active = true
           fub_user.intercom_id = intercom_user.id
           fub_user.save
+          fub_user.fub_client_datum.save
           process_user intercom_user, fub_user
         end
       end
