@@ -25,7 +25,7 @@ module Fub
     # @param [Intercom::Contact] intercom_contact
     def setup_intercom_contact(intercom_contact)
       intercom_contact.custom_attributes["fub_lead"] = true
-      intercom_contact.custom_attributes["converted_at"] =
+      intercom_contact.custom_attributes["fub_created_at"] =
         self.fub_lead_datum.converted_at.to_i
       intercom_contact.custom_attributes["synced_at"] =
         self.fub_lead_datum.synced_at.to_i

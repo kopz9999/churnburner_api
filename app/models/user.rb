@@ -50,6 +50,7 @@ class User < ApplicationRecord
   def set_default_company(company)
     reset_default_company
     self.user_companies.create(default: true, company: company)
+    self.default_company = company
   end
 
   def validated_default_company
