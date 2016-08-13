@@ -39,8 +39,16 @@ class Company < ApplicationRecord
     # @param [Intercom::Company] intercom_comp
     # @return [Company]
     def retrieve_intercom_company(intercom_comp)
-      company = Company.find_by name: intercom_comp.name
-      company = Company.intercom_company(intercom_comp) if company.nil?
+      company = self.find_by name: intercom_comp.name
+      company = self.intercom_company(intercom_comp) if company.nil?
+      company
+    end
+
+    def fub_user(f_usr)
+      company = self.create name: "#{f_usr.name} Company"
+      company.company_identifier = company.id.to_s
+      company.save
+      company.create_email_data(value: f_usr.email)
       company
     end
   end
