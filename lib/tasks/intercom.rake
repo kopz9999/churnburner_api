@@ -43,4 +43,14 @@ namespace :intercom do
     ChurnburnerApi::IntercomCompaniesManager.instance.process
     Rails.logger.info 'Companies synced!!'
   end
+
+  desc "Import companies from FUB CSV"
+  task :import_csv_fub_companies, [:data_file] => :environment do |t, args|
+    task_params = args.to_hash
+    data_file = task_params.fetch(:data_file, 'fub_companies.csv')
+    path = File.join(Rails.root, 'data', data_file)
+    Rails.logger.info "Processing #{data_file}"
+    ChurnburnerApi::ETL::IntercomCompanies.instance.import_csv path
+    Rails.logger.info "#{data_file} processed!"
+  end
 end

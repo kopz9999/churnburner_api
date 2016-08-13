@@ -17,8 +17,6 @@ class Company < ApplicationRecord
           end
         end
       end
-      company.company_identifier = company.id.to_s
-      company.save
       company
     end
 
@@ -46,8 +44,6 @@ class Company < ApplicationRecord
 
     def fub_user(f_usr)
       company = self.create name: "#{f_usr.name} Company"
-      company.company_identifier = company.id.to_s
-      company.save
       company.create_email_data(value: f_usr.email)
       company
     end
@@ -58,6 +54,8 @@ class Company < ApplicationRecord
   has_many :data, class_name: 'CompanyDatum'
   has_many :user_companies
   has_many :users, through: :user_companies
+
+  after_create :set_company_identifier
 
   DATA_ATTRIBUTES.each do |a|
     has_one :"#{a}_data", -> { where(name: a) }, class_name: 'CompanyDatum'
@@ -73,5 +71,11 @@ class Company < ApplicationRecord
       name: self.name,
       custom_attributes: custom_attributes
     }
+  end
+
+  protected
+
+  def set_company_identifier
+    self.update(company_identifier: self.id.to_s)
   end
 end
