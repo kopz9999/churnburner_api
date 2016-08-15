@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160809231606) do
+ActiveRecord::Schema.define(version: 20160815222651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,6 +83,14 @@ ActiveRecord::Schema.define(version: 20160809231606) do
     t.string   "name"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "sidekiq_jobs", force: :cascade do |t|
+    t.string   "sidekiq_job_id"
+    t.integer  "job_id"
+    t.integer  "app_task_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "sync_events", force: :cascade do |t|

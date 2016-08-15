@@ -14,6 +14,7 @@ class AppTask < ApplicationRecord
   scope :latest_success, -> (name) {
     where(name: name, status_identity: SUCCESS).order(ran_at: :desc)
   }
+  has_many :sidekiq_jobs
 
   def finish
     self.status_identity = SUCCESS
