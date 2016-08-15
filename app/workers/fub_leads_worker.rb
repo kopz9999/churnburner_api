@@ -24,27 +24,7 @@ class FubLeadsWorker
       next unless person.source.downcase.include? 'curaytor'
       fub_person = Fub::Person.retrieve_fub_lead person
       fub_person.set_default_company self.fub_user.validated_default_company
-      sync_intercom_lead fub_person
     end
     Rails.logger.info "#{user_company_slug}: Page #{page} processed"
-  end
-
-  # @param [Fub::Person] fub_person
-  def sync_intercom_lead(fub_person)
-    intercom_contact = intercom_client.contacts
-                         .find_all(email: fub_person.email)
-                         .to_a.first
-    if intercom_contact.nil?
-      intercom_contact =
-        intercom_client.contacts.create(email: fub_person.email,
-                                        name: fub_person.name)
-    end
-    if fub_person.intercom_id.nil?
-      fub_person.intercom_id = intercom_contact.id
-      fub_person.save
-    end
-    fub_person.setup_intercom_contact intercom_contact
-    intercom_client.contacts.save(intercom_contact)
-    fub_person.mark_synced
   end
 end

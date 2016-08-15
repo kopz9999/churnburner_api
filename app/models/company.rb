@@ -73,6 +73,24 @@ class Company < ApplicationRecord
     }
   end
 
+  def fub_users
+    @fub_users ||= Fub::User.by_company self.id
+  end
+
+  def fub_persons
+    @fub_persons ||= Fub::Person.by_company self.id
+  end
+
+  def fub_metrics
+    {
+      'FUB Leads in last 7 days' =>
+        fub_persons.from_converted_at(Time.now.advance(days: -7)).count(:id),
+      'FUB Leads in last 30 days' =>
+        fub_users.from_converted_at(Time.now.advance(days: -30)).count(:id),
+      'All FUB Leads' => fub_users.count(:id)
+    }
+  end
+
   protected
 
   def set_company_identifier

@@ -29,15 +29,10 @@ RSpec.describe FubLeadsWorker, :vcr do
       end
     end
 
-    it 'creates fub leads correctly in intercom' do
+    it 'creates users for company' do
       subject
-      intercom_company = instance.intercom_client.companies
-                           .find(:company_id => company.company_identifier)
-      intercom_users = intercom_client.companies.users(intercom_company.id)
-      intercom_users.each do |u|
-        person = Fub::Person.all.select{ |p| p.email == u.email }.first
-        expect(person).not_to be_nil
-      end
+      expect(company.fub_users.length).to eq 1
+      expect(company.fub_persons.length).to eq 10
     end
 
     context 'with app task' do

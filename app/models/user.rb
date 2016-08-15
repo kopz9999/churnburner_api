@@ -34,6 +34,11 @@ class User < ApplicationRecord
   end
 
   extend Factory
+
+  scope :by_company, -> (company_id) {
+    joins(:user_companies).where(user_companies: { company_id: company_id })
+  }
+
   has_many :segment_users, dependent: :destroy
   has_many :segments, through: :segment_users
   has_many :user_companies, dependent: :destroy
