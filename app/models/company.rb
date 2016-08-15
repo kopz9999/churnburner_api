@@ -86,8 +86,8 @@ class Company < ApplicationRecord
       'FUB Leads in last 7 days' =>
         fub_persons.from_converted_at(Time.now.advance(days: -7)).count(:id),
       'FUB Leads in last 30 days' =>
-        fub_users.from_converted_at(Time.now.advance(days: -30)).count(:id),
-      'All FUB Leads' => fub_users.count(:id)
+        fub_persons.from_converted_at(Time.now.advance(days: -30)).count(:id),
+      'All FUB Leads' => fub_persons.count(:id)
     }
   end
 
