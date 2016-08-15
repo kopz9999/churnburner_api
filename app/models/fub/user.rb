@@ -5,8 +5,8 @@ module Fub
       joins(:fub_client_datum).where('fub_client_data.active = true')
     }
 
-    has_one :fub_client_datum
-    has_many :user_app_tasks
+    has_one :fub_client_datum, dependent: :destroy
+    has_many :user_app_tasks, dependent: :destroy
     has_many :app_tasks, through: :user_app_tasks
 
     delegate :api_key, :api_key=, :active?, :active=, to: :fub_client_datum

@@ -34,9 +34,9 @@ class User < ApplicationRecord
   end
 
   extend Factory
-  has_many :segment_users
+  has_many :segment_users, dependent: :destroy
   has_many :segments, through: :segment_users
-  has_many :user_companies
+  has_many :user_companies, dependent: :destroy
   has_many :companies, through: :user_companies
   has_one :default_user_companies, -> { default }, class_name: 'UserCompany'
   has_one :default_company, through: :default_user_companies, source: :company

@@ -17,7 +17,7 @@ module Fub
 
     default_scope { where(fub_lead: true) }
 
-    has_one :fub_lead_datum, foreign_key: :user_id
+    has_one :fub_lead_datum, foreign_key: :user_id, dependent: :destroy
     delegate :mark_pending, :mark_synced, :converted_at, :converted_at=,
              :synced_at, :synced_at=, :source, :source=, to: :fub_lead_datum
 
