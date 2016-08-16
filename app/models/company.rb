@@ -51,6 +51,10 @@ class Company < ApplicationRecord
 
   extend Factory
 
+  scope :fub_companies, ->  {
+    joins(:users).where(users: { fub_client: true })
+  }
+
   has_many :data, class_name: 'CompanyDatum'
   has_many :user_companies
   has_many :users, through: :user_companies

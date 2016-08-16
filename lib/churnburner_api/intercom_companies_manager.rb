@@ -16,5 +16,12 @@ module ChurnburnerApi
         IntercomCompaniesWorker.perform_async(page, page_size)
       end
     end
+
+    def process_stats
+      Rails.logger.info "Processing Follow Up Boss companies"
+      companies = Company.fub_companies
+      companies.each { |c| CompaniesStatsWorker.perform_async(c.id) }
+      Rails.logger.info "Finished Processing Follow Up Boss companies"
+    end
   end
 end

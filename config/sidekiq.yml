@@ -6,8 +6,10 @@
   - fub_clients
   - fub_leads
   - intercom_batch
+  - companies_stats
   - default
 :limits:
   fub_clients: 5
   fub_leads: 10
   intercom_batch: 3
+  companies_stats: 5

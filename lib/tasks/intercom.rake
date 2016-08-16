@@ -37,11 +37,20 @@ namespace :intercom do
     end
   end
 
-  desc "Pull down companies and set them into intercom"
-  task :process_companies => :environment do |t, args|
-    Rails.logger.info 'Setting intercom companies ...'
-    ChurnburnerApi::IntercomCompaniesManager.instance.process
-    Rails.logger.info 'Companies synced!!'
+  namespace :companies do
+    desc "Set intercom companies from user custom_attributes"
+    task :process_from_user => :environment do |t, args|
+      Rails.logger.info 'Setting intercom companies ...'
+      ChurnburnerApi::IntercomCompaniesManager.instance.process
+      Rails.logger.info 'Companies synced!!'
+    end
+
+    desc "Pull down companies and set them into intercom"
+    task :process_stats => :environment do |t, args|
+      Rails.logger.info 'Sending company stats to intercom ...'
+      ChurnburnerApi::IntercomCompaniesManager.instance.process_stats
+      Rails.logger.info 'Company stats synced!!'
+    end
   end
 
   desc "Import companies from FUB CSV"
