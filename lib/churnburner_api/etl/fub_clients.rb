@@ -21,9 +21,15 @@ module ChurnburnerApi
           fub_user = Fub::User.create(email: email, name: name)
         end
         intercom_user = setup_intercom_user(fub_user)
-        fub_user.update(intercom_id: intercom_user.id)
+        if intercom_user.nil?
+          company = Company.fub_user fub_user
+          fub_user.set_default_company company
+          self.intercom_client.companies.create(company.to_intercom_hash)
+        else
+          fub_user.update(intercom_id: intercom_user.id)
+          process_user intercom_user, fub_user
+        end
         fub_user.fub_client_datum.update(api_key: api_key, active: true)
-        process_user intercom_user, fub_user
       end
 
       # @param [Intercom::User] intercom_user

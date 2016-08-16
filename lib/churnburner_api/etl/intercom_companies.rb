@@ -21,8 +21,21 @@ module ChurnburnerApi
           fub_user = Fub::User.create(email: email, name: name)
         end
         intercom_user = setup_intercom_user(fub_user)
-        fub_user.update(intercom_id: intercom_user.id)
-        process_user intercom_user, fub_user, company_name
+        if intercom_user.nil?
+          company = company_fub_user company_name, fub_user
+          fub_user.set_default_company company
+          self.intercom_client.companies.create(company.to_intercom_hash)
+        else
+          fub_user.update(intercom_id: intercom_user.id)
+          process_user intercom_user, fub_user, company_name
+        end
+      end
+
+      def company_fub_user(company_name, fub_user)
+        company = Company.find_or_create_by(name: company_name)
+        company.email_data ||=
+          company.create_email_data(value: fub_user.email)
+        company
       end
 
         # @param [Intercom::User] intercom_user
@@ -32,12 +45,9 @@ module ChurnburnerApi
             (raw_company_name = intercom_user.custom_attributes['company_name']) &&
             !raw_company_name.blank? &&
             (company_name = raw_company_name.gsub('"', '')) && !company_name.blank?
-            company = ChurnburnerApi::ETL.setup_intercom_company(intercom_user,
-                                                                 company_name)
+            company = setup_intercom_company(intercom_user, company_name)
           else
-            company = Company.find_or_create_by(name: company_name)
-            company.email_data ||=
-              company.create_email_data(value: fub_user.email)
+            company = company_fub_user company_name, fub_user
           end
         else
           companies = intercom_user.companies

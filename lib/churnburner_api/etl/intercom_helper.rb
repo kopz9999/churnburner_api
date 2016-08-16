@@ -11,6 +11,9 @@ module ChurnburnerApi
           intercom_user = intercom_client.users.find(email: fub_user.email)
         rescue Intercom::ResourceNotFound
           intercom_user = nil
+        rescue Intercom::MultipleMatchingUsersError
+          # Bug on Intercom API
+          return nil
         end
         if intercom_user.nil?
           intercom_user = intercom_client.users

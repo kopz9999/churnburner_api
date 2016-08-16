@@ -16,9 +16,6 @@ module Fub
     extend Factory
 
     default_scope { where(fub_lead: true) }
-    scope :by_company, -> (company_id) {
-      joins(:user_companies).where(user_companies: { company_id: company_id })
-    }
     scope :from_converted_at, -> (converted_at) {
       joins(:fub_lead_datum).where('fub_lead_data.converted_at > ?',
                                    converted_at)
