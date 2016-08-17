@@ -4,6 +4,8 @@ class FubLeadDatum < ApplicationRecord
     SYNCED = 1
   end
 
+  belongs_to :fub_source, dependent: false
+
   def mark_pending
     self.sync_status_identity = StatusIdentities::PENDING
     self.save

@@ -90,13 +90,34 @@ class Company < ApplicationRecord
   end
 
   def fub_metrics
-    {
-      'FUB Leads in last 7 days' =>
-        fub_persons.from_converted_at(Time.now.advance(days: -7)).count(:id),
-      'FUB Leads in last 30 days' =>
-        fub_persons.from_converted_at(Time.now.advance(days: -30)).count(:id),
-      'All FUB Leads' => fub_persons.count(:id)
+    sources = FubSource.all
+    time_queries = {
+      'FUB Leads in last 7 days' => {
+        days_before: 7
+      },
+      'FUB Leads in last 30 days' => {
+        days_before: 30
+      },
+      'All FUB Leads' => {}
     }
+    result_hash = {}
+    time_queries.each do |k, v|
+      result_hash[k] = 0
+      sources.each do |s|
+        persons = FubClient::Person.by_page(1, 1)
+                    .where(stage: FubClientsWorker::FubStages::LEAD,
+                           source: s.name)
+        if (days_before = v[:days_before])
+          persons = persons.where({
+            createdAfter: Time.now.advance(days: (days_before*-1))
+          })
+        end
+        total = persons.metadata[:total]
+        # Rails.logger.info "#{k} - #{s.name} - #{total}"
+        result_hash[k] += total
+      end
+    end
+    result_hash
   end
 
   protected

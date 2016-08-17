@@ -7,6 +7,8 @@ module Fub
         lead.converted_at = Time.parse(fub_person.created)
         lead.synced_at = Time.now
         lead.source = fub_person.source
+        lead.fub_source =
+          FubSource.find_or_create_by(name: fub_person.source.strip)
         lead.mark_pending
         lead.save
         lead
@@ -23,7 +25,8 @@ module Fub
 
     has_one :fub_lead_datum, foreign_key: :user_id, dependent: :destroy
     delegate :mark_pending, :mark_synced, :converted_at, :converted_at=,
-             :synced_at, :synced_at=, :source, :source=, to: :fub_lead_datum
+             :synced_at, :synced_at=, :source, :source=, :fub_source,
+             :fub_source=, to: :fub_lead_datum
 
     after_create :create_fub_lead_datum
 

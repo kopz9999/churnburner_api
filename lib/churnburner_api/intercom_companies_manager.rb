@@ -22,8 +22,8 @@ module ChurnburnerApi
 
     def process_stats
       Rails.logger.info "Processing Follow Up Boss companies"
-      companies = Company.fub_companies
-      companies.each { |c| CompaniesStatsWorker.perform_async(c.id) }
+      users = Fub::User.default_active.joins(:default_user_companies)
+      users.each { |u| CompaniesStatsWorker.perform_async(u.id) }
       Rails.logger.info "Finished Processing Follow Up Boss companies"
     end
   end
