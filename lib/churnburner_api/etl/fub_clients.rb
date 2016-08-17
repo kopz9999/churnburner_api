@@ -16,6 +16,7 @@ module ChurnburnerApi
 
       def process_line(line)
         return if line.blank?
+        Rails.logger.info line
         parts = line.split(',')
         name = parts[0]
         email = parts[1].downcase
@@ -32,9 +33,9 @@ module ChurnburnerApi
         else
           fub_user.update(intercom_id: intercom_user.id)
           process_user intercom_user, fub_user
+          tag_user intercom_tag, fub_user
         end
         fub_user.fub_client_datum.update(api_key: api_key, active: true)
-        tag_user intercom_tag, fub_user
       end
 
       # @param [Intercom::User] intercom_user

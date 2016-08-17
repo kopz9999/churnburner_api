@@ -3,11 +3,14 @@ class IntercomCompaniesWorker
   include Sidekiq::Worker
   sidekiq_options queue: 'intercom_batch'
 
+  attr_accessor :ran_at_desc
+
   def intercom_tag
-    "Companies Batch - #{self.ran_at}"
+    "Companies Batch - #{self.ran_at_desc}"
   end
 
-  def perform(page, page_size)
+  def perform(page, page_size, ran_at_desc = '')
+    self.ran_at_desc = ran_at_desc
     intercom_users = self.intercom_client.users.find_all page: page,
                                                          per_page: page_size
     intercom_users.each(&method(:process_user))
