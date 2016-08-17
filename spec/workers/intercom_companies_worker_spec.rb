@@ -12,7 +12,7 @@ RSpec.describe IntercomCompaniesWorker, :vcr do
 
     it 'does not creates a company' do
       instance.perform(1, 1)
-      expect(Company.all.length).to eq 1
+      expect(Company.all.length).to eq 0
     end
   end
 
@@ -84,16 +84,6 @@ RSpec.describe IntercomCompaniesWorker, :vcr do
       let(:company_name) {
         "Ursula and Associates"
       }
-
-      before do
-        begin
-          intercom_company = instance.intercom_client
-                               .companies.find :name => company_name
-          instance.intercom_client.companies.delete intercom_company
-        rescue Intercom::ResourceNotFound
-          intercom_company = nil
-        end
-      end
 
       it 'creates company based on intercom company' do
         subject

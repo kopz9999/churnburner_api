@@ -3,6 +3,9 @@ module ChurnburnerApi
     module IntercomHelper
       include IntercomWorker
 
+      def intercom_tag
+        raise NotImplementedError
+      end
 
       # @param [Fub::User] fub_user
       # @return [Intercom::User]
@@ -40,6 +43,23 @@ module ChurnburnerApi
             Company.intercom_company(intercom_company)
         end
         company
+      end
+
+      # @param [Company] company
+      # @return [Intercom::Company]
+      def retrieve_intercom_company(company)
+        begin
+          intercom_company =
+            self.intercom_client.companies.find(name: company.name)
+        rescue Intercom::ResourceNotFound
+          intercom_company = nil
+        end
+        if intercom_company.nil?
+          intercom_company =
+            self.intercom_client.companies.create(company.to_intercom_hash)
+          tag_company intercom_tag, company
+        end
+        intercom_company
       end
     end
   end

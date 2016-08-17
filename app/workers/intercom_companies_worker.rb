@@ -3,6 +3,10 @@ class IntercomCompaniesWorker
   include Sidekiq::Worker
   sidekiq_options queue: 'intercom_batch'
 
+  def intercom_tag
+    "Companies Batch - #{self.ran_at}"
+  end
+
   def perform(page, page_size)
     intercom_users = self.intercom_client.users.find_all page: page,
                                                          per_page: page_size
@@ -20,6 +24,8 @@ class IntercomCompaniesWorker
       user = User.retrieve_intercom_response intercom_user.as_json
       UserCompany.create user: user, company: company
       self.intercom_client.users.save(intercom_user)
+      tag_company intercom_tag, company
+      tag_user intercom_tag, user
     end
   end
 

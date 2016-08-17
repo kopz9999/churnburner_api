@@ -4,6 +4,10 @@ module ChurnburnerApi
       include Singleton
       include ChurnburnerApi::ETL::IntercomHelper
 
+      def intercom_tag
+        "Companies FUB CSV - #{self.ran_at}"
+      end
+
       def import_csv(path)
         File.open(path, "r") do |f|
           f.each_line(&method(:process_line))
@@ -24,17 +28,20 @@ module ChurnburnerApi
         if intercom_user.nil?
           company = company_fub_user company_name, fub_user
           fub_user.set_default_company company
-          self.intercom_client.companies.create(company.to_intercom_hash)
+          retrieve_intercom_company company
         else
           fub_user.update(intercom_id: intercom_user.id)
           process_user intercom_user, fub_user, company_name
         end
+        tag_user intercom_tag, fub_user
       end
 
+      # @return [Company]
       def company_fub_user(company_name, fub_user)
         company = Company.find_or_create_by(name: company_name)
         company.email_data ||=
           company.create_email_data(value: fub_user.email)
+        tag_company intercom_tag, company
         company
       end
 

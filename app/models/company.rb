@@ -1,4 +1,8 @@
 class Company < ApplicationRecord
+  # @!attribute name
+  #   @return [String] the name of the user
+  # @!attribute company_identifier
+  #   @return [String] the name of the user
   DATA_ATTRIBUTES = [:phone, :email, :address, :facebook, :twitter, :linkedin,
                      :google_plus, :youtube, :pinterest, :instagram, :snapchat]
 

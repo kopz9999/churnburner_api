@@ -1,4 +1,13 @@
 class User < ApplicationRecord
+  # @!attribute email
+  #   @return [String]
+  # @!attribute intercom_id
+  #   @return [String]
+  # @!attribute name
+  #   @return [String]
+  # @!attribute fub_id
+  #   @return [Integer]
+
   module Factory
     def retrieve_intercom_response(user_hash)
       user = self.find_by(intercom_id: user_hash['id'])
