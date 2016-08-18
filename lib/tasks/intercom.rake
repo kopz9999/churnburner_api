@@ -51,6 +51,23 @@ namespace :intercom do
       ChurnburnerApi::IntercomCompaniesManager.instance.process_stats
       Rails.logger.info 'Company stats synced!!'
     end
+
+    desc "Pull down companies and set them into intercom worker"
+    task :process_stats_worker, [:minutes] => :environment  do |t, args|
+      task_params = args.to_hash
+      minutes = task_params.fetch(:minutes, '60').to_i
+      Rails.logger.info "Starting fub clients daemon..."
+      loop do
+        Rails.logger.info 'Sending company stats to intercom ...'
+        begin
+          ChurnburnerApi::IntercomCompaniesManager.instance.process_stats
+        rescue => e
+          Rails.logger.error e.backtrace
+        end
+        Rails.logger.info 'Company stats synced!!'
+        sleep (60*minutes)
+      end
+    end
   end
 
   desc "Import companies from FUB CSV"

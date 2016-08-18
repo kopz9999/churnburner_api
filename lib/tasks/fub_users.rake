@@ -3,9 +3,26 @@ namespace :fub_users do
   task :sync_clients, [:all] => :environment do |t, args|
     task_params = args.to_hash
     all = task_params.fetch(:all, false)
-    Rails.logger.info 'Syncing events ...'
+    Rails.logger.info 'Syncing follow up boss leads from clients ...'
     ChurnburnerApi::FubClientsManager.instance.sync all
-    Rails.logger.info 'Segments Synced !!'
+    Rails.logger.info 'Leads Synced !!'
+  end
+
+  desc "Sync Follow Up Leads Worker"
+  task :sync_clients_worker, [:minutes] => :environment do |t, args|
+    task_params = args.to_hash
+    minutes = task_params.fetch(:minutes, '60').to_i
+    Rails.logger.info "Starting fub clients daemon..."
+    loop do
+      Rails.logger.info 'Syncing follow up boss leads from clients ...'
+      begin
+        ChurnburnerApi::FubClientsManager.instance.sync false
+      rescue => e
+        Rails.logger.error e.backtrace
+      end
+      Rails.logger.info 'Leads Synced !!'
+      sleep (60*minutes)
+    end
   end
 
   desc "Import FUB users from CSV"
