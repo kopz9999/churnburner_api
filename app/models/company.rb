@@ -96,7 +96,7 @@ class Company < ApplicationRecord
         days_before: 7
       },
       'FUB Leads in last 30 days' => {
-        days_before: 30
+        days_before: 29
       },
       'All FUB Leads' => {}
     }
@@ -108,12 +108,15 @@ class Company < ApplicationRecord
                     .where(stage: FubClientsWorker::FubStages::LEAD,
                            source: s.name)
         if (days_before = v[:days_before])
+          time_at_formatted =
+            Time.now.advance(days: (days_before*-1))
+              .middle_of_day.utc.iso8601.to_s
           persons = persons.where({
-            createdAfter: Time.now.advance(days: (days_before*-1))
+            createdAfter: time_at_formatted
           })
         end
         total = persons.metadata[:total]
-        # Rails.logger.info "#{k} - #{s.name} - #{total}"
+        Rails.logger.info "#{self.name}\t#{k}\t#{s.name}\t#{total}"
         result_hash[k] += total
       end
     end
