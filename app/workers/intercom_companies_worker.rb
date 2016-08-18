@@ -24,8 +24,10 @@ class IntercomCompaniesWorker
         (company_name = raw_company_name.gsub('"', '')) && !company_name.blank?
       company = find_company intercom_user, company_name
       intercom_user.companies = [company.to_intercom_hash]
+      # @type [User]
       user = User.retrieve_intercom_response intercom_user.as_json
       UserCompany.create user: user, company: company
+      user.set_default_company company
       self.intercom_client.users.save(intercom_user)
       tag_company intercom_tag, company
       tag_user intercom_tag, user

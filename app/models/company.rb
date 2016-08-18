@@ -27,7 +27,7 @@ class Company < ApplicationRecord
     # @param [Intercom::Company] intercom_comp
     # @return [Company]
     def intercom_company(intercom_comp)
-      company = self.create name: intercom_comp.name
+      company = self.create name: HTMLEntities.new.decode(intercom_comp.name)
       unless intercom_comp.custom_attributes.blank?
         intercom_comp.custom_attributes.each do |k, v|
           company.data.create(name: k, value: v) unless v.blank?
@@ -41,7 +41,7 @@ class Company < ApplicationRecord
     # @param [Intercom::Company] intercom_comp
     # @return [Company]
     def retrieve_intercom_company(intercom_comp)
-      company = self.find_by name: intercom_comp.name
+      company = self.find_by name: HTMLEntities.new.decode(intercom_comp.name)
       company = self.intercom_company(intercom_comp) if company.nil?
       company
     end

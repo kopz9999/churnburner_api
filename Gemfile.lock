@@ -96,6 +96,7 @@ GEM
       activesupport (>= 4.1.0)
     hashdiff (0.3.0)
     hashie (3.4.4)
+    htmlentities (4.3.4)
     i18n (0.7.0)
     intercom (3.5.2)
       json (~> 1.8)
@@ -232,6 +233,7 @@ DEPENDENCIES
   figleaf
   fub_client!
   her!
+  htmlentities
   intercom (~> 3.5.1)
   listen (~> 3.0.5)
   pg

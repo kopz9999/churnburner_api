@@ -24,6 +24,7 @@ gem 'sidekiq'
 gem 'sidekiq-limit_fetch'
 gem 'figleaf'
 gem 'slack-ruby-client'
+gem 'htmlentities'
 # Use PostgresSQL as the database for Active Record
 gem 'pg'
 # gem 'faraday', '0.8.11'
