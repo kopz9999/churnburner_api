@@ -55,7 +55,7 @@ namespace :intercom do
     desc "Pull down companies and set them into intercom worker"
     task :process_stats_worker, [:minutes] => :environment  do |t, args|
       task_params = args.to_hash
-      minutes = task_params.fetch(:minutes, '60').to_i
+      minutes = task_params.fetch(:minutes, '10').to_i
       Rails.logger.info "Starting fub clients daemon..."
       loop do
         Rails.logger.info 'Sending company stats to intercom ...'
