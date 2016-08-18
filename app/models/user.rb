@@ -7,6 +7,10 @@ class User < ApplicationRecord
   #   @return [String]
   # @!attribute fub_id
   #   @return [Integer]
+  # @!attribute fub_client
+  #   @return [Boolean]
+  # @!attribute fub_lead
+  #   @return [Boolean]
 
   module Factory
     def retrieve_intercom_response(user_hash)
@@ -73,5 +77,11 @@ class User < ApplicationRecord
 
   def validated_default_company
     self.default_company || self.companies.first
+  end
+
+  def to_fub_user
+    self.fub_client = true
+    FubClientDatum.create(user_id: self.id)
+    self.save
   end
 end

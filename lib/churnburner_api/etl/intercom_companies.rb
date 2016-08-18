@@ -21,10 +21,7 @@ module ChurnburnerApi
         name = parts[0]
         email = parts[1].downcase
         company_name = parts[2].gsub(/(\n|\r)/, '')
-        fub_user = Fub::User.find_by email: email
-        if fub_user.nil?
-          fub_user = Fub::User.create(email: email, name: name)
-        end
+        fub_user = retrieve_fub_user email, name
         intercom_user = setup_intercom_user(fub_user)
         if intercom_user.nil?
           company = company_fub_user company_name, fub_user

@@ -61,6 +61,21 @@ module ChurnburnerApi
         end
         intercom_company
       end
+
+      # @param [String] email
+      # @param [String] name
+      # @return [Fub::User]
+      def retrieve_fub_user(email, name)
+        # @type [User]
+        user = ::User.find_by email: email
+        if user.nil?
+          fub_user = Fub::User.create(email: email, name: name)
+        else
+          user.to_fub_user unless user.fub_client?
+          fub_user = Fub::User.find_by email: email
+        end
+        fub_user
+      end
     end
   end
 end
