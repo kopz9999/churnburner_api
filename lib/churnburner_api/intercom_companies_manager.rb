@@ -26,5 +26,20 @@ module ChurnburnerApi
       users.each { |u| CompaniesStatsWorker.perform_async(u.id) }
       Rails.logger.info "Finished Processing Follow Up Boss companies"
     end
+
+    # @param [Integer] group_size
+    # @param [Integer] minutes
+    def process_delayed_stats(group_size, minutes)
+      Rails.logger.info "Processing Follow Up Boss companies"
+      users = Fub::User.default_active.joins(:default_user_companies)
+      users.in_groups_of(group_size, false) do |group|
+        group.each do |u|
+          CompaniesStatsWorker.perform_async(u.id)
+        end
+        Rails.logger.info "Processed Group. Waiting #{minutes} minutes ..."
+        sleep (60*minutes)
+      end
+      Rails.logger.info "Finished Processing Follow Up Boss companies"
+    end
   end
 end

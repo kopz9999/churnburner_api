@@ -52,20 +52,23 @@ namespace :intercom do
       Rails.logger.info 'Company stats synced!!'
     end
 
+    # TODO: Retry when tasks done
     desc "Pull down companies and set them into intercom worker"
     task :process_stats_worker, [:minutes] => :environment  do |t, args|
       task_params = args.to_hash
-      minutes = task_params.fetch(:minutes, '10').to_i
+      group_size = task_params.fetch(:group_size, '5').to_i
+      minutes = task_params.fetch(:minutes, '1').to_i
+      Rails.logger.info "Params: #{task_params}"
       Rails.logger.info "Starting fub clients daemon..."
       loop do
         Rails.logger.info 'Sending company stats to intercom ...'
         begin
-          ChurnburnerApi::IntercomCompaniesManager.instance.process_stats
+          ChurnburnerApi::IntercomCompaniesManager.instance
+            .process_delayed_stats(group_size, minutes)
         rescue => e
           Rails.logger.error e.backtrace
         end
         Rails.logger.info 'Company stats synced!!'
-        sleep (60*minutes)
       end
     end
   end
